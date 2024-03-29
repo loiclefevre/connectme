@@ -1,4 +1,4 @@
-package com.oracle.connectme;
+package com.oracle.connect;
 
 public class Main {
 	public static void main(String[] args) {
