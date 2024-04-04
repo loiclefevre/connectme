@@ -16,8 +16,9 @@
         <javafx.version>22</javafx.version>
         <javafx.maven.plugin.version>0.0.8</javafx.maven.plugin.version>
         <maven.compiler.plugin.version>3.8.1</maven.compiler.plugin.version>
-        <maven.compiler.source>21</maven.compiler.source>
-        <maven.compiler.target>21</maven.compiler.target>
+        <maven.compiler.source>22</maven.compiler.source>
+        <maven.compiler.target>22</maven.compiler.target>
+        <maven.compiler.release>22</maven.compiler.release>
         <maven.plugin.validation>brief</maven.plugin.validation>
         <native.maven.plugin.version>0.10.1</native.maven.plugin.version>
         <mainClass>com.oracle.connect.Main</mainClass>
@@ -116,11 +117,11 @@
                         </executions>
                         <configuration>
                             <skip>false</skip>
-                            <imageName>${imageName}</imageName>
+                            <imageName>distrib/${imageName}</imageName>
                             <mainClass>${mainClass}</mainClass>
                             <fallback>false</fallback>
                             <agent>
-                                <enabled>true</enabled>
+                                <enabled>false</enabled>
                             </agent>
                             <buildArgs>
                                 -Ob
