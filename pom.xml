@@ -115,10 +115,18 @@
                             </execution>
                         </executions>
                         <configuration>
+                            <skip>false</skip>
+                            <imageName>${imageName}</imageName>
+                            <mainClass>${mainClass}</mainClass>
                             <fallback>false</fallback>
                             <agent>
                                 <enabled>true</enabled>
                             </agent>
+                            <buildArgs>
+                                -Ob
+                                -march=native
+                                --initialize-at-build-time=com.oracle.connect.Main
+                            </buildArgs>
                         </configuration>
                     </plugin>
                 </plugins>
@@ -217,6 +225,109 @@
                         </configuration>
                     </execution>
                 </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>com.gluonhq</groupId>
+                <artifactId>gluonfx-maven-plugin</artifactId>
+                <version>1.0.22</version>
+                <configuration>
+                    <mainClass>${mainClass}</mainClass>
+                    <verbose>true</verbose>
+
+                    <javaStaticSdkVersion>22+36.1</javaStaticSdkVersion>
+                    <javafxStaticSdkVersion>22</javafxStaticSdkVersion>
+
+                    <runtimeArgs>
+                        <arg>--add-exports=java.desktop/sun.awt.image=ALL-UNNAMED</arg>
+                        <arg>--add-exports=java.desktop/sun.awt.image=com.oracle.connect</arg>
+                        <arg>--add-exports=javafx.controls/com.sun.javafx.scene.control=com.oracle.connect</arg>
+                        <arg>--add-exports=javafx.controls/com.sun.javafx.scene.control=ALL-UNNAMED</arg>
+                        <arg>--add-exports=javafx.graphics/com.sun.javafx.tk=com.oracle.connect</arg>
+                        <arg>--add-exports=javafx.graphics/com.sun.javafx.tk=ALL-UNNAMED</arg>
+                        <arg>-Djava.home=.</arg>
+                        <arg>-Dprism.verbose=true</arg>
+                        <arg>-Dprism.supershader=false</arg>
+                        <arg>-Dprism.allowhidpi=false</arg>
+                        <arg>-Djavafx.animation.fullspeed=true</arg>
+                        <arg>-Dprism.vpipe=false</arg>
+                        <arg>-Dprism.debug=false</arg>
+                        <arg>-Djavafx.animation.pulse=60</arg>
+                        <arg>-Dprism.vsync=false</arg>
+                        <arg>-Xmx4G</arg>
+                        <arg>-Xms2G</arg>
+                    </runtimeArgs>
+
+
+                    <nativeImageArgs>
+                        <!-- arg>-H:TempDirectory=C:/dev/projects/connectme/tmp</arg -->
+                        <arg>-Ob</arg>
+                        <arg>-Djava.awt.headless=true</arg>
+                        <arg>--allow-incomplete-classpath</arg>
+                        <arg>--no-fallback</arg>
+                        <arg>-H:+ReportUnsupportedElementsAtRuntime</arg>
+                    </nativeImageArgs>
+
+                    <reflectionList>
+                        <list>com.oracle.connect.gui.Controller</list>
+                    </reflectionList>
+
+                    <linkerArgs>
+                        <!-- arg>awt.lib</arg -->
+                        <arg>fontmanager.lib</arg>
+                        <arg>freetype.lib</arg>
+                        <arg>gdi32.lib</arg>
+                        <arg>ole32.lib</arg>
+
+                        <arg>jawt.lib</arg>
+                        <arg>javaaccessbridge.lib</arg>
+                        <arg>management_ext.lib</arg>
+                        <arg>psapi.lib</arg>
+                        <arg>msvcrt.lib</arg>
+                        <arg>advapi32.lib</arg>
+                        <arg>iphlpapi.lib</arg>
+                        <arg>secur32.lib</arg>
+                        <arg>userenv.lib</arg>
+                        <arg>version.lib</arg>
+                        <arg>ws2_32.lib</arg>
+                        <arg>winhttp.lib</arg>
+                        <arg>ncrypt.lib</arg>
+                        <arg>crypt32.lib</arg>
+                        <arg>j2pkcs11.lib</arg>
+                        <arg>java.lib</arg>
+                        <arg>net.lib</arg>
+                        <arg>nio.lib</arg>
+                        <arg>prefs.lib</arg>
+                        <arg>zip.lib</arg>
+                        <arg>sunmscapi.lib</arg>
+
+                        <!-- required for the shim dlls -->
+                        <!-- https://github.com/oracle/graal/issues/4072#issuecomment-1025211534 -->
+                        <!-- https://github.com/oracle/graal/blob/vm-ce-22.3.0/substratevm/src/com.oracle.svm.hosted/src/com/oracle/svm/hosted/jdk/JNIRegistrationAWTSupport.java#L45-L66 -->
+                        <arg>/export:JDK_LoadSystemLibrary</arg>
+                        <arg>/export:JNU_CallMethodByName</arg>
+                        <arg>/export:JNU_CallMethodByNameV</arg>
+                        <arg>/export:JNU_CallStaticMethodByName</arg>
+                        <arg>/export:JNU_ClassString</arg>
+                        <arg>/export:JNU_GetEnv</arg>
+                        <arg>/export:JNU_GetFieldByName</arg>
+                        <arg>/export:JNU_GetStaticFieldByName</arg>
+                        <arg>/export:JNU_IsInstanceOfByName</arg>
+                        <arg>/export:JNU_NewObjectByName</arg>
+                        <arg>/export:JNU_NewStringPlatform</arg>
+                        <arg>/export:JNU_SetFieldByName</arg>
+                        <arg>/export:JNU_ThrowArrayIndexOutOfBoundsException</arg>
+                        <arg>/export:JNU_ThrowByName</arg>
+                        <arg>/export:JNU_ThrowIOException</arg>
+                        <arg>/export:JNU_ThrowIllegalArgumentException</arg>
+                        <arg>/export:JNU_ThrowInternalError</arg>
+                        <arg>/export:JNU_ThrowNullPointerException</arg>
+                        <arg>/export:JNU_ThrowOutOfMemoryError</arg>
+                        <arg>/export:getEncodingFromLangID</arg>
+                        <arg>/export:getJavaIDFromLangID</arg>
+                        <arg>shell32.lib</arg>
+                    </linkerArgs>
+                </configuration>
             </plugin>
         </plugins>
     </build>
