@@ -1,0 +1,14 @@
+-cp
+C:\\Users\\LLEFEVRE\\.m2\\repository\\com\\oracle\\database\\jdbc\\ojdbc11\\23.3.0.23.09\\ojdbc11-23.3.0.23.09.jar;C:\\Users\\LLEFEVRE\\.m2\\repository\\com\\oracle\\database\\jdbc\\ucp\\23.3.0.23.09\\ucp-23.3.0.23.09.jar;C:\\Users\\LLEFEVRE\\.m2\\repository\\org\\fxmisc\\flowless\\flowless\\0.7.2\\flowless-0.7.2.jar;C:\\Users\\LLEFEVRE\\.m2\\repository\\org\\reactfx\\reactfx\\2.0-M5\\reactfx-2.0-M5.jar;C:\\Users\\LLEFEVRE\\.m2\\repository\\org\\fxmisc\\wellbehaved\\wellbehavedfx\\0.3.3\\wellbehavedfx-0.3.3.jar;C:\\Users\\LLEFEVRE\\.m2\\repository\\org\\fxmisc\\undo\\undofx\\2.1.1\\undofx-2.1.1.jar
+--no-fallback
+-o
+target/distrib/connectme
+-Ob
+-march=native
+--initialize-at-build-time=com.oracle.connect/com.oracle.connect.Main
+--add-modules javafx.controls,javafx.fxml,com.oracle.connect
+--module-path
+target/connectme-1.0.0.jar;C:\\Users\\LLEFEVRE\\.m2\\repository\\org\\openjfx\\javafx-fxml\\22\\javafx-fxml-22.jar;C:\\Users\\LLEFEVRE\\.m2\\repository\\org\\openjfx\\javafx-fxml\\22\\javafx-fxml-22-win.jar;C:\\Users\\LLEFEVRE\\.m2\\repository\\org\\openjfx\\javafx-controls\\22\\javafx-controls-22.jar;C:\\Users\\LLEFEVRE\\.m2\\repository\\org\\openjfx\\javafx-controls\\22\\javafx-controls-22-win.jar;C:\\Users\\LLEFEVRE\\.m2\\repository\\org\\openjfx\\javafx-graphics\\22\\javafx-graphics-22.jar;C:\\Users\\LLEFEVRE\\.m2\\repository\\org\\openjfx\\javafx-graphics\\22\\javafx-graphics-22-win.jar;C:\\Users\\LLEFEVRE\\.m2\\repository\\org\\openjfx\\javafx-base\\22\\javafx-base-22.jar;C:\\Users\\LLEFEVRE\\.m2\\repository\\org\\openjfx\\javafx-base\\22\\javafx-base-22-win.jar;C:\\Users\\LLEFEVRE\\.m2\\repository\\org\\openjfx\\javafx-swing\\22\\javafx-swing-22.jar;C:\\Users\\LLEFEVRE\\.m2\\repository\\org\\openjfx\\javafx-swing\\22\\javafx-swing-22-win.jar;C:\\Users\\LLEFEVRE\\.m2\\repository\\com\\dlsc\\formsfx\\formsfx-core\\11.6.0\\formsfx-core-11.6.0.jar;C:\\Users\\LLEFEVRE\\.m2\\repository\\org\\controlsfx\\controlsfx\\11.2.1\\controlsfx-11.2.1.jar;C:\\Users\\LLEFEVRE\\.m2\\repository\\org\\kordamp\\bootstrapfx\\bootstrapfx-core\\0.4.0\\bootstrapfx-core-0.4.0.jar
+--module
+com.oracle.connect/com.oracle.connect.Main
+

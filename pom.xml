@@ -21,7 +21,7 @@
         <maven.compiler.release>22</maven.compiler.release>
         <maven.plugin.validation>brief</maven.plugin.validation>
         <native.maven.plugin.version>0.10.1</native.maven.plugin.version>
-        <mainClass>com.oracle.connect.Main</mainClass>
+        <!-- mainClass>com.oracle.connect.Main</mainClass -->
         <imageName>connectme</imageName>
     </properties>
 
@@ -116,17 +116,23 @@
                             </execution>
                         </executions>
                         <configuration>
+                            <verbose>true</verbose>
                             <skip>false</skip>
                             <imageName>distrib/${imageName}</imageName>
-                            <mainClass>${mainClass}</mainClass>
                             <fallback>false</fallback>
                             <agent>
                                 <enabled>false</enabled>
                             </agent>
                             <buildArgs>
+                                -cp ""
+                                --module-path target/connectme-1.0.0.jar;C:\Users\LLEFEVRE\.m2\repository\org\openjfx\javafx-fxml\22\javafx-fxml-22-win.jar;C:\Users\LLEFEVRE\.m2\repository\org\openjfx\javafx-controls\22\javafx-controls-22-win.jar;C:\Users\LLEFEVRE\.m2\repository\org\openjfx\javafx-base\22\javafx-base-22-win.jar;C:\Users\LLEFEVRE\.m2\repository\org\openjfx\javafx-graphics\22\javafx-graphics-22-win.jar;C:\Users\LLEFEVRE\.m2\repository\org\openjfx\javafx-swing\22\javafx-swing-22-win.jar;C:\Users\LLEFEVRE\.m2\repository\com\dlsc\formsfx\formsfx-core\11.6.0\formsfx-core-11.6.0.jar;C:\Users\LLEFEVRE\.m2\repository\org\kordamp\bootstrapfx\bootstrapfx-core\0.4.0\bootstrapfx-core-0.4.0.jar;C:\Users\LLEFEVRE\.m2\repository\org\controlsfx\controlsfx\11.2.1\controlsfx-11.2.1.jar
                                 -Ob
                                 -march=native
-                                --initialize-at-build-time=com.oracle.connect.Main
+                                --initialize-at-build-time=com.oracle.connect/com.oracle.connect.Main
+                                --add-modules javafx.controls
+                                --add-modules javafx.fxml
+                                --add-modules com.oracle.connect
+                                --module com.oracle.connect/com.oracle.connect.Main
                             </buildArgs>
                         </configuration>
                     </plugin>

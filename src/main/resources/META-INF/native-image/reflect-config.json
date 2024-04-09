@@ -1,5 +1,9 @@
 [
 {
+  "name":"com.intellij.rt.execution.application.AppMainV2$Agent",
+  "methods":[{"name":"premain","parameterTypes":["java.lang.String","java.lang.instrument.Instrumentation"] }]
+},
+{
   "name":"com.oracle.connect.JavaFXApplication",
   "methods":[{"name":"<init>","parameterTypes":[] }]
 },
