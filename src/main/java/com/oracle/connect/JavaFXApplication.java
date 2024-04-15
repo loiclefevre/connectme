@@ -11,6 +11,11 @@ import javafx.stage.Stage;
 
 import java.util.Objects;
 
+/**
+ * the JavaFX application.
+ *
+ * @author Loïc Lefèvre
+ */
 public class JavaFXApplication extends Application {
 
 	static Controller guiController;
@@ -29,5 +34,4 @@ public class JavaFXApplication extends Application {
 		guiController.initialize();
 		stage.show();
 	}
-
 }
