@@ -1,2 +1,8 @@
 [
+  {
+    "interfaces":["com.sun.prism.ps.Shader","de.teragam.jfxshader.util.ReflectProxy","de.teragam.jfxshader.JFXShader"]
+  },
+  {
+    "interfaces":["com.sun.scenario.effect.EffectHelper$EffectAccessor"]
+  }
 ]

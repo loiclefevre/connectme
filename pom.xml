@@ -18,7 +18,7 @@
         <maven.compiler.plugin.version>3.8.1</maven.compiler.plugin.version>
         <maven.compiler.source>22</maven.compiler.source>
         <maven.compiler.target>22</maven.compiler.target>
-        <maven.compiler.release>22</maven.compiler.release>
+        <!-- maven.compiler.release>22</maven.compiler.release -->
         <maven.plugin.validation>brief</maven.plugin.validation>
         <native.maven.plugin.version>0.10.1</native.maven.plugin.version>
         <!-- mainClass>com.oracle.connect.Main</mainClass -->
@@ -29,12 +29,12 @@
         <dependency>
             <groupId>com.oracle.database.jdbc</groupId>
             <artifactId>ojdbc11</artifactId>
-            <version>23.3.0.23.09</version>
+            <version>23.4.0.24.05</version>
         </dependency>
         <dependency>
             <groupId>com.oracle.database.jdbc</groupId>
             <artifactId>ucp</artifactId>
-            <version>23.3.0.23.09</version>
+            <version>23.4.0.24.05</version>
         </dependency>
         <!-- JavaFX -->
         <dependency>
@@ -88,6 +88,21 @@
             <artifactId>undofx</artifactId>
             <version>2.1.1</version>
         </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-math3</artifactId>
+            <version>3.6.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.antlr</groupId>
+            <artifactId>antlr4-runtime</artifactId>
+            <version>4.13.1</version>
+        </dependency>
+        <dependency>
+            <groupId>de.teragam</groupId>
+            <artifactId>jfxshader</artifactId>
+            <version>1.3.1</version>
+        </dependency>
     </dependencies>
 
     <profiles>
@@ -95,6 +110,36 @@
             <id>native</id>
             <build>
                 <plugins>
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>build-helper-maven-plugin</artifactId>
+                        <version>3.0.0</version>
+                        <executions>
+                            <execution>
+                                <phase>generate-sources</phase>
+                                <goals>
+                                    <goal>add-source</goal>
+                                </goals>
+                                <configuration>
+                                    <sources>
+                                        <source>src/main/javagen</source>
+                                    </sources>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <!-- plugin>
+                        <groupId>org.antlr</groupId>
+                        <artifactId>antlr4-maven-plugin</artifactId>
+                        <version>4.8-1</version>
+                        <executions>
+                            <execution>
+                                <goals>
+                                    <goal>antlr4</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin -->
                     <plugin>
                         <groupId>org.graalvm.buildtools</groupId>
                         <artifactId>native-maven-plugin</artifactId>
@@ -159,6 +204,27 @@
                 <configuration>
                     <source>${maven.compiler.source}</source>
                     <target>${maven.compiler.source}</target>
+                    <compilerArgs>
+                        <arg>--add-exports=java.desktop/sun.awt.image=ALL-UNNAMED</arg>
+                        <arg>--add-exports=java.desktop/sun.awt.image=com.oracle.demosql</arg>
+                        <arg>--add-exports=javafx.controls/com.sun.javafx.scene.control=com.oracle.connect</arg>
+                        <arg>--add-exports=javafx.graphics/com.sun.javafx.tk=com.oracle.connect</arg>
+                        <arg>--add-exports=javafx.graphics/com.sun.scenario.effect=com.oracle.connect</arg>
+                        <arg>--add-exports=javafx.graphics/com.sun.scenario.effect=de.teragam.jfxshader</arg>
+                        <arg>--add-exports=javafx.graphics/com.sun.scenario.effect.impl=com.oracle.connect</arg>
+                        <arg>--add-exports=javafx.graphics/com.sun.scenario.effect.impl=de.teragam.jfxshader</arg>
+                        <arg>--add-exports=javafx.graphics/com.sun.scenario.effect.impl.state=com.oracle.connect</arg>
+                        <arg>--add-exports=javafx.graphics/com.sun.scenario.effect.impl.state=de.teragam.jfxshader</arg>
+                        <arg>--add-exports=javafx.graphics/com.sun.javafx.geom.transform=com.oracle.connect</arg>
+                        <arg>--add-exports=javafx.graphics/com.sun.javafx.geom.transform=de.teragam.jfxshader</arg>
+                        <arg>--add-exports=javafx.graphics/com.sun.javafx.geom=com.oracle.connect</arg>
+                        <arg>--add-exports=javafx.graphics/com.sun.javafx.geom=de.teragam.jfxshader</arg>
+                        <arg>--add-exports=javafx.graphics/com.sun.scenario.effect.impl.prism.ps=com.oracle.connect</arg>
+                        <arg>--add-exports=javafx.graphics/com.sun.scenario.effect.impl.prism.ps=de.teragam.jfxshader</arg>
+                        <arg>--add-exports=javafx.graphics/com.sun.prism.ps=com.oracle.connect</arg>
+                        <arg>--add-exports=javafx.graphics/com.sun.prism.ps=de.teragam.jfxshader</arg>
+                        <arg>--add-exports=javafx.graphics/com.sun.prism.impl=com.oracle.connect</arg>
+                    </compilerArgs>
                 </configuration>
             </plugin>
 

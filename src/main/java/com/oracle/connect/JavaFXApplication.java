@@ -8,6 +8,7 @@ import javafx.scene.Scene;
 import javafx.scene.SceneAntialiasing;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
+import oracle.jdbc.diagnostics.Diagnostic;
 
 import java.util.Objects;
 
@@ -27,7 +28,7 @@ public class JavaFXApplication extends Application {
 		final Scene scene = new Scene(parent, -1f, -1f, false, SceneAntialiasing.BALANCED);
 		stage.setResizable(false);
 		stage.setScene(scene);
-		stage.setTitle("JavaFX native image with GraalVM!");
+		stage.setTitle("Oracle Database Connectivity");
 		stage.getIcons().add(new Image(Objects.requireNonNull(JavaFXApplication.class.getResourceAsStream("icon.png"))));
 
 		guiController = fxmlLoader.getController();

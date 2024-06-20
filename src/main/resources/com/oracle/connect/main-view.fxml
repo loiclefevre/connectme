@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.effect.*?>
 <?import javafx.scene.image.*?>
@@ -11,49 +12,95 @@
         <Insets bottom="0" left="0" right="0" top="0" />
     </padding>
     <children>
-        <Pane fx:id="img" blendMode="SCREEN" maxHeight="480.0" maxWidth="1240.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="1240.0" scaleShape="false" stylesheets="@gui.css" BorderPane.alignment="CENTER">
+        <Pane maxHeight="480.0" maxWidth="1240.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="1240.0" scaleShape="false" stylesheets="@gui.css" BorderPane.alignment="CENTER">
             <children>
-                <!-- Canvas id="code" fx:id="code" height="435.0" layoutX="61.0" layoutY="61.0" pickOnBounds="true" width="851.0">
+                <Pane fx:id="img" maxHeight="480.0" maxWidth="1240.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="1240.0" scaleShape="false" stylesheets="@gui.css" BorderPane.alignment="CENTER">
                     <effect>
-                        <DropShadow height="114.0" offsetY="5.0" radius="56.5" width="114.0" />
+                        <GaussianBlur radius="20.0" />
                     </effect>
-                </Canvas -->
-                <Label fx:id="title" layoutX="68.0" layoutY="128.0" prefHeight="144.0" prefWidth="600.0" stylesheets="@gui.css" text="Build faster, smaller, leaner&#13;applications" textFill="#ffffff">
-                    <effect>
-                        <DropShadow height="114.0" offsetY="5.0" radius="56.5" width="114.0" />
-                    </effect>
-                </Label>
-                <Label fx:id="subtitle" layoutX="68.0" layoutY="280.0" prefHeight="32.0" stylesheets="@gui.css" text="An advanced JDK with ahead-of-time Native Image compilation" textFill="#ffffff">
-                    <effect>
-                        <DropShadow height="114.0" offsetY="5.0" radius="56.5" width="114.0" />
-                    </effect>
-                </Label>
-                <ImageView fx:id="background1" fitHeight="564" fitWidth="550" layoutX="828.0" layoutY="-50.0" pickOnBounds="true" preserveRatio="true">
+                </Pane>
+
+                <ImageView fitHeight="328.0" fitWidth="328.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@metaimage-main-01.png" />
+                        <Image url="@source_server.png" />
                     </image>
                     <effect>
-                        <BoxBlur height="0.0" width="0.0" />
+                        <DropShadow />
                     </effect>
                 </ImageView>
-                <ImageView fx:id="background2" fitHeight="919" fitWidth="1750" layoutX="-344" layoutY="174" pickOnBounds="true" preserveRatio="true">
+                <ImageView fx:id="databaseImage" fitHeight="328.0" fitWidth="328.0" layoutX="912.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@metaimage-main-02.png" />
+                        <Image url="@target_database.png" />
                     </image>
                     <effect>
-                        <BoxBlur height="0.0" width="0.0" />
+                        <DropShadow />
+                        <GaussianBlur radius="50.0" />
                     </effect>
                 </ImageView>
-                <ImageView fx:id="rabbit" fitHeight="255" fitWidth="332" layoutX="805" layoutY="120" pickOnBounds="true" preserveRatio="true">
+                <ImageView fx:id="autonomousDatabaseImage" fitHeight="454.0" fitWidth="454.0" layoutX="849.0" layoutY="-10.0" pickOnBounds="true" preserveRatio="true" visible="false">
                     <image>
-                        <Image url="@graalvm_rabbit_icon.png" />
+                        <Image url="@target_autonomous_database.png" />
                     </image>
                     <effect>
-                        <BoxBlur height="0.0" width="0.0" />
+                        <DropShadow />
+                        <GaussianBlur radius="50.0" />
                     </effect>
                 </ImageView>
-            <Button fx:id="download" layoutX="68.0" layoutY="371.0" mnemonicParsing="false" onAction="#openLinkDownload" prefHeight="38" prefWidth="180" stylesheets="@gui.css" text="Download" />
-            <Button fx:id="getstarted" layoutX="274.0" layoutY="371.0" mnemonicParsing="false" onAction="#openLinkGetStarted" prefHeight="38" prefWidth="180" stylesheets="@gui.css" text="Get Started" />
+                <ImageView fx:id="connectLine" fitHeight="28.0" fitWidth="750.0" layoutX="243.0" layoutY="250.0" pickOnBounds="true" preserveRatio="false" visible="false">
+                    <image>
+                        <Image url="@connection.png" />
+                    </image>
+                    <effect>
+                        <Blend mode="MULTIPLY">
+                            <topInput>
+                                <ColorAdjust saturation="-1.0" />
+                            </topInput>
+                            <bottomInput>
+                                <ColorInput height="28" paint="chartreuse" width="750" />
+                            </bottomInput>
+                        </Blend>
+                    </effect>
+                </ImageView>
+                <Label fx:id="errorLink" layoutX="72.0" layoutY="10.0" prefHeight="17.0" prefWidth="1088.0" stylesheets="@gui.css" text="" textFill="#ffffff" />
+                <TextField fx:id="connectionString" layoutX="85.0" layoutY="34.0" onKeyTyped="#analyseConnectionString" prefHeight="25.0" prefWidth="1075.0" promptText="Connection string" text="(description=(retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1522)(host=adb.eu-paris-1.oraclecloud.com))(connect_data=(service_name=g04882e973a17cf_atps_tp.adb.oraclecloud.com))(security=(ssl_server_dn_match=yes)))" >
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </TextField>
+                <Button fx:id="connectionStringFormat" focusTraversable="false" layoutX="4.0" layoutY="36.0" onAction="#onActionConnectStringFormat" mnemonicParsing="false" prefHeight="20" prefWidth="77" stylesheets="@gui.css" text="" />
+
+                <TextField fx:id="userSchema" layoutX="992.0" layoutY="75.0" onKeyTyped="#analyseConnectionString" prefHeight="25.0" prefWidth="168.0" promptText="User schema" text="admin" >
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </TextField>
+                <PasswordField fx:id="password" layoutX="992.0" layoutY="112.0" onKeyTyped="#analyseConnectionString" prefHeight="25.0" prefWidth="168.0" promptText="Password" text="My_Strong_Pa66word" >
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </PasswordField>
+
+                <Label fx:id="driverVersion" layoutX="66.0" layoutY="337.0" prefHeight="17.0" prefWidth="197.0" stylesheets="@gui.css" text="" textFill="#ffffff" />
+
+                <Label fx:id="databaseVersion" layoutX="992.0" layoutY="362.0" maxHeight="17.0" maxWidth="244.0" minHeight="17.0" minWidth="169.0" prefHeight="17.0" prefWidth="244.0" stylesheets="@gui.css" text="" textFill="#ffffff" />
+                <Label fx:id="databaseHost" layoutX="992.0" layoutY="372.0" maxHeight="17.0" maxWidth="244.0" minHeight="17.0" minWidth="169.0" prefHeight="17.0" prefWidth="244.0" stylesheets="@gui.css" text="" textFill="#ffffff" />
+                <Label fx:id="databaseName" layoutX="992.0" layoutY="382.0" maxHeight="17.0" maxWidth="244.0" minHeight="17.0" minWidth="169.0" prefHeight="17.0" prefWidth="244.0" stylesheets="@gui.css" text="" textFill="#ffffff" />
+                <Label fx:id="databaseRole" layoutX="992.0" layoutY="392.0" maxHeight="17.0" maxWidth="244.0" minHeight="17.0" minWidth="169.0" prefHeight="17.0" prefWidth="244.0" stylesheets="@gui.css" text="" textFill="#ffffff" />
+                <Label fx:id="databaseDomain" layoutX="992.0" layoutY="402.0" maxHeight="17.0" maxWidth="244.0" minHeight="17.0" minWidth="169.0" prefHeight="17.0" prefWidth="244.0" stylesheets="@gui.css" text="" textFill="#ffffff" />
+                <Label fx:id="drainingStatus" layoutX="992.0" layoutY="412.0" maxHeight="17.0" maxWidth="244.0" minHeight="17.0" minWidth="169.0" prefHeight="17.0" prefWidth="244.0" stylesheets="@gui.css" text="" textFill="#ffffff" />
+
+                <Label fx:id="physicalConnectionInfo" layoutX="249.0" layoutY="229.0" prefHeight="17.0" prefWidth="750.0" stylesheets="@gui.css" text="" textFill="#ffffff" />
+                <Label fx:id="connectedIn" layoutX="249.0" layoutY="278.0" prefHeight="17.0" prefWidth="197.0" stylesheets="@gui.css" text="" textFill="#ffffff" />
+                <LineChart fx:id="pingChart" animated="false" layoutX="300.0" layoutY="300.0" prefHeight="100.0" prefWidth="629.0" style="-fx-background-color: #ffffff00;">
+                    <xAxis>
+                        <NumberAxis fx:id="pingChartXAxis" autoRanging="true" side="BOTTOM" style="-fx-font-size: 11px; -fx-tick-label-fill: #ffffff; -fx-tick-label-font-size: 10px;" />
+                    </xAxis>
+                    <yAxis>
+                        <NumberAxis autoRanging="true" lowerBound="0" label="Ping (ms)" side="LEFT" style="-fx-font-size: 11px; -fx-tick-label-fill: #ffffff; -fx-tick-label-font-size: 10px;" />
+                    </yAxis>
+                </LineChart>
+                <Label fx:id="pingChartInformation" layoutX="377.0" layoutY="436.0" prefHeight="17.0" prefWidth="500.0" stylesheets="@gui.css" text="" textFill="#ffffff" />
+
             </children>
         </Pane>
     </children>

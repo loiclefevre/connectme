@@ -1,5 +1,38 @@
 [
 {
+  "name":"[B"
+},
+{
+  "name":"[C"
+},
+{
+  "name":"[D"
+},
+{
+  "name":"[F"
+},
+{
+  "name":"[I"
+},
+{
+  "name":"[J"
+},
+{
+  "name":"[Ljava.lang.String;"
+},
+{
+  "name":"[Ljavax.management.openmbean.CompositeData;"
+},
+{
+  "name":"[Lsun.security.pkcs.SignerInfo;"
+},
+{
+  "name":"[S"
+},
+{
+  "name":"[Z"
+},
+{
   "name":"com.intellij.rt.execution.application.AppMainV2$Agent",
   "methods":[{"name":"premain","parameterTypes":["java.lang.String","java.lang.instrument.Instrumentation"] }]
 },
@@ -15,7 +48,68 @@
   "name":"com.oracle.connect.gui.Controller",
   "allDeclaredFields":true,
   "queryAllDeclaredMethods":true,
-  "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"initialize","parameterTypes":[] }, {"name":"openLinkDownload","parameterTypes":[] }, {"name":"openLinkGetStarted","parameterTypes":[] }]
+  "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"analyseConnectionString","parameterTypes":[] }, {"name":"initialize","parameterTypes":[] }, {"name":"onActionConnectStringFormat","parameterTypes":[] }, {"name":"openLinkDownload","parameterTypes":[] }, {"name":"openLinkGetStarted","parameterTypes":[] }]
+},
+{
+  "name":"com.oracle.connect.gui.fx.BilinearGradientEffectPeer",
+  "queryAllDeclaredConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":["de.teragam.jfxshader.effect.ShaderEffectPeerConfig"] }]
+},
+{
+  "name":"com.sun.crypto.provider.AESCipher$General",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"com.sun.crypto.provider.ARCFOURCipher",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"com.sun.crypto.provider.ChaCha20Cipher$ChaCha20Poly1305",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"com.sun.crypto.provider.DESCipher",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"com.sun.crypto.provider.DESedeCipher",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"com.sun.crypto.provider.DHParameters",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"com.sun.crypto.provider.GaloisCounterMode$AESGCM",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"com.sun.crypto.provider.HmacCore$HmacSHA512",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"com.sun.crypto.provider.PBKDF2Core$HmacSHA512",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"com.sun.crypto.provider.RSACipher",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"com.sun.crypto.provider.TlsKeyMaterialGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"com.sun.crypto.provider.TlsMasterSecretGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"com.sun.crypto.provider.TlsPrfGenerator$V12",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"com.sun.crypto.provider.TlsRsaPremasterSecretGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
 },
 {
   "name":"com.sun.glass.ui.Screen"
@@ -55,12 +149,83 @@
   "methods":[{"name":"<init>","parameterTypes":[] }]
 },
 {
+  "name":"com.sun.javafx.util.Utils",
+  "allDeclaredFields":true,
+  "allPublicFields":true,
+  "allDeclaredMethods":true,
+  "allPublicMethods":true,
+  "allDeclaredConstructors":true,
+  "allPublicConstructors":true
+},
+{
+  "name":"com.sun.management.GarbageCollectorMXBean",
+  "queryAllPublicMethods":true
+},
+{
+  "name":"com.sun.management.GcInfo",
+  "queryAllPublicMethods":true
+},
+{
+  "name":"com.sun.management.HotSpotDiagnosticMXBean",
+  "queryAllPublicMethods":true
+},
+{
+  "name":"com.sun.management.OperatingSystemMXBean",
+  "queryAllPublicMethods":true
+},
+{
+  "name":"com.sun.management.ThreadMXBean",
+  "queryAllPublicMethods":true
+},
+{
+  "name":"com.sun.management.VMOption",
+  "queryAllPublicMethods":true
+},
+{
+  "name":"com.sun.management.internal.GarbageCollectorExtImpl",
+  "queryAllPublicConstructors":true
+},
+{
+  "name":"com.sun.management.internal.HotSpotDiagnostic",
+  "queryAllPublicConstructors":true
+},
+{
+  "name":"com.sun.management.internal.HotSpotThreadImpl",
+  "queryAllPublicConstructors":true
+},
+{
+  "name":"com.sun.management.internal.OperatingSystemImpl",
+  "queryAllPublicConstructors":true
+},
+{
   "name":"com.sun.prism.GraphicsPipeline",
   "methods":[{"name":"getFontFactory","parameterTypes":[] }, {"name":"getPipeline","parameterTypes":[] }]
 },
 {
+  "name":"com.sun.prism.GraphicsResource",
+  "methods":[{"name":"dispose","parameterTypes":[] }]
+},
+{
   "name":"com.sun.prism.d3d.D3DPipeline",
   "methods":[{"name":"getInstance","parameterTypes":[] }]
+},
+{
+  "name":"com.sun.prism.impl.BaseGraphics",
+  "fields":[{"name":"context"}]
+},
+{
+  "name":"com.sun.prism.impl.ps.BaseShaderContext",
+  "queryAllDeclaredMethods":true,
+  "fields":[{"name":"CHECK_TEXTURE_OP_MASK"}, {"name":"state"}],
+  "methods":[{"name":"checkState","parameterTypes":[] }, {"name":"checkState","parameterTypes":["com.sun.prism.impl.ps.BaseShaderGraphics","int","com.sun.javafx.geom.transform.BaseTransform","com.sun.prism.ps.Shader"] }, {"name":"setTexture","parameterTypes":[] }, {"name":"setTexture","parameterTypes":["int","com.sun.prism.Texture"] }, {"name":"updatePerVertexColor","parameterTypes":[] }, {"name":"updatePerVertexColor","parameterTypes":["com.sun.prism.paint.Paint","float"] }]
+},
+{
+  "name":"com.sun.prism.impl.ps.BaseShaderContext$State",
+  "fields":[{"name":"lastTextures"}]
+},
+{
+  "name":"com.sun.prism.ps.Shader",
+  "methods":[{"name":"enable","parameterTypes":[] }, {"name":"isValid","parameterTypes":[] }, {"name":"setConstant","parameterTypes":["java.lang.String","float"] }, {"name":"setConstant","parameterTypes":["java.lang.String","float","float","float","float"] }]
 },
 {
   "name":"com.sun.prism.shader.FillPgram_Color_Loader",
@@ -109,7 +274,12 @@
   "allDeclaredMethods":true,
   "allPublicMethods":true,
   "allDeclaredConstructors":true,
-  "allPublicConstructors":true
+  "allPublicConstructors":true,
+  "methods":[{"name":"loadShader","parameterTypes":["com.sun.prism.ps.ShaderFactory","java.io.InputStream"] }]
+},
+{
+  "name":"com.sun.prism.shader.Solid_Color_Loader",
+  "methods":[{"name":"loadShader","parameterTypes":["com.sun.prism.ps.ShaderFactory","java.io.InputStream"] }]
 },
 {
   "name":"com.sun.prism.shader.Solid_TextureRGB_Loader",
@@ -138,18 +308,59 @@
   "allDeclaredMethods":true,
   "allPublicMethods":true,
   "allDeclaredConstructors":true,
-  "allPublicConstructors":true
+  "allPublicConstructors":true,
+  "methods":[{"name":"loadShader","parameterTypes":["com.sun.prism.ps.ShaderFactory","java.io.InputStream"] }]
+},
+{
+  "name":"com.sun.scenario.effect.EffectHelper",
+  "fields":[{"name":"effectAccessor"}]
+},
+{
+  "name":"com.sun.scenario.effect.EffectHelper$EffectAccessor",
+  "methods":[{"name":"effectDirtyProperty","parameterTypes":["javafx.scene.effect.Effect"] }, {"name":"getBounds","parameterTypes":["javafx.scene.effect.Effect","com.sun.javafx.geom.BaseBounds","com.sun.javafx.geom.transform.BaseTransform","javafx.scene.Node","com.sun.javafx.scene.BoundsAccessor"] }, {"name":"getPeer","parameterTypes":["javafx.scene.effect.Effect"] }, {"name":"isEffectDirty","parameterTypes":["javafx.scene.effect.Effect"] }, {"name":"sync","parameterTypes":["javafx.scene.effect.Effect"] }]
+},
+{
+  "name":"com.sun.scenario.effect.impl.Renderer",
+  "fields":[{"name":"peerCache"}]
 },
 {
   "name":"com.sun.scenario.effect.impl.hw.d3d.D3DShaderSource",
   "methods":[{"name":"<init>","parameterTypes":[] }]
 },
 {
+  "name":"com.sun.scenario.effect.impl.prism.PrCropPeer",
+  "methods":[{"name":"<init>","parameterTypes":["com.sun.scenario.effect.FilterContext","com.sun.scenario.effect.impl.Renderer","java.lang.String"] }]
+},
+{
+  "name":"com.sun.scenario.effect.impl.prism.PrFloodPeer",
+  "methods":[{"name":"<init>","parameterTypes":["com.sun.scenario.effect.FilterContext","com.sun.scenario.effect.impl.Renderer","java.lang.String"] }]
+},
+{
   "name":"com.sun.scenario.effect.impl.prism.PrRenderer",
   "methods":[{"name":"createRenderer","parameterTypes":["com.sun.scenario.effect.FilterContext"] }]
 },
 {
+  "name":"com.sun.scenario.effect.impl.prism.ps.PPSBlend_ADDPeer",
+  "methods":[{"name":"<init>","parameterTypes":["com.sun.scenario.effect.FilterContext","com.sun.scenario.effect.impl.Renderer","java.lang.String"] }]
+},
+{
+  "name":"com.sun.scenario.effect.impl.prism.ps.PPSBlend_MULTIPLYPeer",
+  "methods":[{"name":"<init>","parameterTypes":["com.sun.scenario.effect.FilterContext","com.sun.scenario.effect.impl.Renderer","java.lang.String"] }]
+},
+{
   "name":"com.sun.scenario.effect.impl.prism.ps.PPSBlend_SCREENPeer",
+  "methods":[{"name":"<init>","parameterTypes":["com.sun.scenario.effect.FilterContext","com.sun.scenario.effect.impl.Renderer","java.lang.String"] }]
+},
+{
+  "name":"com.sun.scenario.effect.impl.prism.ps.PPSBrightpassPeer",
+  "methods":[{"name":"<init>","parameterTypes":["com.sun.scenario.effect.FilterContext","com.sun.scenario.effect.impl.Renderer","java.lang.String"] }]
+},
+{
+  "name":"com.sun.scenario.effect.impl.prism.ps.PPSColorAdjustPeer",
+  "methods":[{"name":"<init>","parameterTypes":["com.sun.scenario.effect.FilterContext","com.sun.scenario.effect.impl.Renderer","java.lang.String"] }]
+},
+{
+  "name":"com.sun.scenario.effect.impl.prism.ps.PPSLinearConvolvePeer",
   "methods":[{"name":"<init>","parameterTypes":["com.sun.scenario.effect.FilterContext","com.sun.scenario.effect.impl.Renderer","java.lang.String"] }]
 },
 {
@@ -165,7 +376,46 @@
   "methods":[{"name":"<init>","parameterTypes":[] }]
 },
 {
+  "name":"de.teragam.jfxshader.ShaderController",
+  "allDeclaredFields":true,
+  "allPublicFields":true,
+  "allDeclaredMethods":true,
+  "allPublicMethods":true,
+  "allDeclaredConstructors":true,
+  "allPublicConstructors":true,
+  "methods":[{"name":"injectEffectAccessor","parameterTypes":[] }]
+},
+{
+  "name":"de.teragam.jfxshader.ShaderEffect",
+  "allDeclaredFields":true,
+  "allPublicFields":true,
+  "allDeclaredMethods":true,
+  "allPublicMethods":true,
+  "allDeclaredConstructors":true,
+  "allPublicConstructors":true
+},
+{
+  "name":"de.teragam.jfxshader.effect.internal.DefaultEffectRenderer",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"de.teragam.jfxshader.util.Reflect$1OffsetProvider",
+  "fields":[{"name":"first"}]
+},
+{
+  "name":"jakarta.json.JsonValue"
+},
+{
+  "name":"java.lang.Boolean",
+  "fields":[{"name":"TYPE"}]
+},
+{
+  "name":"java.lang.Byte",
+  "fields":[{"name":"TYPE"}]
+},
+{
   "name":"java.lang.Character",
+  "fields":[{"name":"TYPE"}],
   "methods":[{"name":"isIdeographic","parameterTypes":["int"] }]
 },
 {
@@ -173,12 +423,115 @@
   "methods":[{"name":"forName","parameterTypes":["java.lang.Module","java.lang.String"] }, {"name":"getModule","parameterTypes":[] }]
 },
 {
+  "name":"java.lang.Deprecated",
+  "queryAllPublicMethods":true
+},
+{
+  "name":"java.lang.Double",
+  "fields":[{"name":"TYPE"}]
+},
+{
+  "name":"java.lang.Float",
+  "fields":[{"name":"TYPE"}]
+},
+{
+  "name":"java.lang.Integer",
+  "fields":[{"name":"TYPE"}]
+},
+{
+  "name":"java.lang.Long",
+  "fields":[{"name":"TYPE"}]
+},
+{
   "name":"java.lang.Module",
-  "methods":[{"name":"getDescriptor","parameterTypes":[] }, {"name":"getLayer","parameterTypes":[] }, {"name":"getName","parameterTypes":[] }, {"name":"getResourceAsStream","parameterTypes":["java.lang.String"] }]
+  "methods":[{"name":"getDescriptor","parameterTypes":[] }, {"name":"getLayer","parameterTypes":[] }, {"name":"getName","parameterTypes":[] }, {"name":"getResourceAsStream","parameterTypes":["java.lang.String"] }, {"name":"implAddOpens","parameterTypes":["java.lang.String","java.lang.Module"] }]
 },
 {
   "name":"java.lang.ModuleLayer",
   "methods":[{"name":"boot","parameterTypes":[] }, {"name":"findModule","parameterTypes":["java.lang.String"] }]
+},
+{
+  "name":"java.lang.Process",
+  "methods":[{"name":"pid","parameterTypes":[] }]
+},
+{
+  "name":"java.lang.Short",
+  "fields":[{"name":"TYPE"}]
+},
+{
+  "name":"java.lang.StackTraceElement",
+  "queryAllPublicMethods":true
+},
+{
+  "name":"java.lang.String",
+  "fields":[{"name":"TYPE"}]
+},
+{
+  "name":"java.lang.Thread",
+  "fields":[{"name":"threadLocalRandomProbe"}]
+},
+{
+  "name":"java.lang.Void",
+  "fields":[{"name":"TYPE"}]
+},
+{
+  "name":"java.lang.management.BufferPoolMXBean",
+  "queryAllPublicMethods":true
+},
+{
+  "name":"java.lang.management.ClassLoadingMXBean",
+  "queryAllPublicMethods":true
+},
+{
+  "name":"java.lang.management.CompilationMXBean",
+  "queryAllPublicMethods":true
+},
+{
+  "name":"java.lang.management.LockInfo",
+  "queryAllPublicMethods":true
+},
+{
+  "name":"java.lang.management.ManagementPermission",
+  "methods":[{"name":"<init>","parameterTypes":["java.lang.String"] }]
+},
+{
+  "name":"java.lang.management.MemoryMXBean",
+  "queryAllPublicMethods":true
+},
+{
+  "name":"java.lang.management.MemoryManagerMXBean",
+  "queryAllPublicMethods":true
+},
+{
+  "name":"java.lang.management.MemoryPoolMXBean",
+  "queryAllPublicMethods":true
+},
+{
+  "name":"java.lang.management.MemoryUsage",
+  "queryAllPublicMethods":true
+},
+{
+  "name":"java.lang.management.MonitorInfo",
+  "queryAllPublicMethods":true
+},
+{
+  "name":"java.lang.management.PlatformLoggingMXBean",
+  "queryAllPublicMethods":true,
+  "methods":[{"name":"getLoggerLevel","parameterTypes":["java.lang.String"] }, {"name":"getLoggerNames","parameterTypes":[] }, {"name":"getParentLoggerName","parameterTypes":["java.lang.String"] }, {"name":"setLoggerLevel","parameterTypes":["java.lang.String","java.lang.String"] }]
+},
+{
+  "name":"java.lang.management.RuntimeMXBean",
+  "queryAllPublicMethods":true
+},
+{
+  "name":"java.lang.management.ThreadInfo",
+  "queryAllPublicMethods":true
+},
+{
+  "name":"java.math.BigDecimal"
+},
+{
+  "name":"java.math.BigInteger"
 },
 {
   "name":"java.nio.ByteBuffer",
@@ -189,6 +542,120 @@
   "methods":[{"name":"nativeOrder","parameterTypes":[] }]
 },
 {
+  "name":"java.security.AlgorithmParametersSpi"
+},
+{
+  "name":"java.security.KeyStoreSpi"
+},
+{
+  "name":"java.security.SecureRandomParameters"
+},
+{
+  "name":"java.security.interfaces.RSAPrivateKey"
+},
+{
+  "name":"java.security.interfaces.RSAPublicKey"
+},
+{
+  "name":"java.sql.Array",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"java.sql.Blob",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"java.sql.CallableStatement",
+  "queryAllDeclaredMethods":true,
+  "methods":[{"name":"execute","parameterTypes":[] }, {"name":"execute","parameterTypes":["java.lang.String"] }, {"name":"execute","parameterTypes":["java.lang.String","int"] }, {"name":"execute","parameterTypes":["java.lang.String","int[]"] }, {"name":"execute","parameterTypes":["java.lang.String","java.lang.String[]"] }, {"name":"executeQuery","parameterTypes":[] }, {"name":"executeQuery","parameterTypes":["java.lang.String"] }, {"name":"executeUpdate","parameterTypes":[] }, {"name":"executeUpdate","parameterTypes":["java.lang.String"] }, {"name":"executeUpdate","parameterTypes":["java.lang.String","int"] }, {"name":"executeUpdate","parameterTypes":["java.lang.String","int[]"] }, {"name":"executeUpdate","parameterTypes":["java.lang.String","java.lang.String[]"] }]
+},
+{
+  "name":"java.sql.Clob",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"java.sql.Connection",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"java.sql.DatabaseMetaData",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"java.sql.NClob",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"java.sql.ParameterMetaData",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"java.sql.PreparedStatement",
+  "queryAllDeclaredMethods":true,
+  "methods":[{"name":"execute","parameterTypes":[] }, {"name":"execute","parameterTypes":["java.lang.String"] }, {"name":"execute","parameterTypes":["java.lang.String","int"] }, {"name":"execute","parameterTypes":["java.lang.String","int[]"] }, {"name":"execute","parameterTypes":["java.lang.String","java.lang.String[]"] }, {"name":"executeQuery","parameterTypes":[] }, {"name":"executeQuery","parameterTypes":["java.lang.String"] }, {"name":"executeUpdate","parameterTypes":[] }, {"name":"executeUpdate","parameterTypes":["java.lang.String"] }, {"name":"executeUpdate","parameterTypes":["java.lang.String","int"] }, {"name":"executeUpdate","parameterTypes":["java.lang.String","int[]"] }, {"name":"executeUpdate","parameterTypes":["java.lang.String","java.lang.String[]"] }]
+},
+{
+  "name":"java.sql.Ref",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"java.sql.ResultSet",
+  "queryAllDeclaredMethods":true,
+  "methods":[{"name":"last","parameterTypes":[] }, {"name":"next","parameterTypes":[] }]
+},
+{
+  "name":"java.sql.ResultSetMetaData",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"java.sql.RowId",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"java.sql.SQLData",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"java.sql.SQLException",
+  "fields":[{"name":"next"}]
+},
+{
+  "name":"java.sql.SQLInput",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"java.sql.SQLOutput",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"java.sql.SQLXML",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"java.sql.Savepoint",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"java.sql.Statement",
+  "queryAllDeclaredMethods":true,
+  "methods":[{"name":"execute","parameterTypes":[] }, {"name":"execute","parameterTypes":["java.lang.String"] }, {"name":"execute","parameterTypes":["java.lang.String","int"] }, {"name":"execute","parameterTypes":["java.lang.String","int[]"] }, {"name":"execute","parameterTypes":["java.lang.String","java.lang.String[]"] }, {"name":"executeQuery","parameterTypes":[] }, {"name":"executeQuery","parameterTypes":["java.lang.String"] }, {"name":"executeUpdate","parameterTypes":[] }, {"name":"executeUpdate","parameterTypes":["java.lang.String"] }, {"name":"executeUpdate","parameterTypes":["java.lang.String","int"] }, {"name":"executeUpdate","parameterTypes":["java.lang.String","int[]"] }, {"name":"executeUpdate","parameterTypes":["java.lang.String","java.lang.String[]"] }]
+},
+{
+  "name":"java.sql.Struct",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"java.util.Date"
+},
+{
+  "name":"java.util.PropertyPermission",
+  "methods":[{"name":"<init>","parameterTypes":["java.lang.String","java.lang.String"] }]
+},
+{
+  "name":"java.util.concurrent.ForkJoinTask",
+  "fields":[{"name":"aux"}, {"name":"status"}]
+},
+{
   "name":"java.util.concurrent.atomic.AtomicBoolean",
   "fields":[{"name":"value"}]
 },
@@ -197,7 +664,32 @@
   "fields":[{"name":"value"}]
 },
 {
+  "name":"java.util.concurrent.atomic.Striped64",
+  "fields":[{"name":"base"}, {"name":"cellsBusy"}]
+},
+{
+  "name":"java.util.concurrent.atomic.Striped64$Cell",
+  "fields":[{"name":"value"}]
+},
+{
+  "name":"java.util.logging.LogManager",
+  "methods":[{"name":"getLoggingMXBean","parameterTypes":[] }]
+},
+{
+  "name":"java.util.logging.LoggingMXBean",
+  "queryAllPublicMethods":true
+},
+{
+  "name":"javafx.animation.KeyValue"
+},
+{
   "name":"javafx.fxml.FXMLLoader"
+},
+{
+  "name":"javafx.geometry.Blend"
+},
+{
+  "name":"javafx.geometry.Bloom"
 },
 {
   "name":"javafx.geometry.BorderPane"
@@ -212,10 +704,25 @@
   "name":"javafx.geometry.Canvas"
 },
 {
+  "name":"javafx.geometry.CategoryAxis"
+},
+{
+  "name":"javafx.geometry.ColorAdjust"
+},
+{
+  "name":"javafx.geometry.ColorInput"
+},
+{
   "name":"javafx.geometry.DropShadow"
 },
 {
+  "name":"javafx.geometry.GaussianBlur"
+},
+{
   "name":"javafx.geometry.Image"
+},
+{
+  "name":"javafx.geometry.ImageInput"
 },
 {
   "name":"javafx.geometry.ImageView"
@@ -230,11 +737,27 @@
   "name":"javafx.geometry.Label"
 },
 {
+  "name":"javafx.geometry.LineChart"
+},
+{
+  "name":"javafx.geometry.NumberAxis"
+},
+{
   "name":"javafx.geometry.Pane"
+},
+{
+  "name":"javafx.geometry.PasswordField"
 },
 {
   "name":"javafx.geometry.Pos",
   "methods":[{"name":"valueOf","parameterTypes":["java.lang.String"] }]
+},
+{
+  "name":"javafx.geometry.Side",
+  "methods":[{"name":"valueOf","parameterTypes":["java.lang.String"] }]
+},
+{
+  "name":"javafx.geometry.TextField"
 },
 {
   "name":"javafx.geometry.VBox"
@@ -243,9 +766,12 @@
   "name":"javafx.scene.Camera"
 },
 {
+  "name":"javafx.scene.Group"
+},
+{
   "name":"javafx.scene.Node",
   "queryAllDeclaredMethods":true,
-  "methods":[{"name":"getId","parameterTypes":[] }, {"name":"getStyleClass","parameterTypes":[] }, {"name":"setBlendMode","parameterTypes":["javafx.scene.effect.BlendMode"] }, {"name":"setEffect","parameterTypes":["javafx.scene.effect.Effect"] }, {"name":"setId","parameterTypes":["java.lang.String"] }, {"name":"setLayoutX","parameterTypes":["double"] }, {"name":"setLayoutY","parameterTypes":["double"] }, {"name":"setPickOnBounds","parameterTypes":["boolean"] }]
+  "methods":[{"name":"getId","parameterTypes":[] }, {"name":"getStyleClass","parameterTypes":[] }, {"name":"setBlendMode","parameterTypes":["javafx.scene.effect.BlendMode"] }, {"name":"setEffect","parameterTypes":["javafx.scene.effect.Effect"] }, {"name":"setFocusTraversable","parameterTypes":["boolean"] }, {"name":"setId","parameterTypes":["java.lang.String"] }, {"name":"setLayoutX","parameterTypes":["double"] }, {"name":"setLayoutY","parameterTypes":["double"] }, {"name":"setOnKeyReleased","parameterTypes":["javafx.event.EventHandler"] }, {"name":"setOnKeyTyped","parameterTypes":["javafx.event.EventHandler"] }, {"name":"setPickOnBounds","parameterTypes":["boolean"] }, {"name":"setStyle","parameterTypes":["java.lang.String"] }, {"name":"setVisible","parameterTypes":["boolean"] }]
 },
 {
   "name":"javafx.scene.ParallelCamera"
@@ -289,6 +815,92 @@
   "name":"javafx.scene.canvas.VBox"
 },
 {
+  "name":"javafx.scene.chart.Axis",
+  "queryAllDeclaredMethods":true,
+  "methods":[{"name":"setAutoRanging","parameterTypes":["boolean"] }, {"name":"setLabel","parameterTypes":["java.lang.String"] }, {"name":"setSide","parameterTypes":["javafx.geometry.Side"] }]
+},
+{
+  "name":"javafx.scene.chart.Blend"
+},
+{
+  "name":"javafx.scene.chart.BorderPane"
+},
+{
+  "name":"javafx.scene.chart.Button"
+},
+{
+  "name":"javafx.scene.chart.CategoryAxis",
+  "queryAllDeclaredMethods":true,
+  "queryAllPublicConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"javafx.scene.chart.Chart",
+  "queryAllDeclaredMethods":true,
+  "methods":[{"name":"setAnimated","parameterTypes":["boolean"] }]
+},
+{
+  "name":"javafx.scene.chart.ColorAdjust"
+},
+{
+  "name":"javafx.scene.chart.ColorInput"
+},
+{
+  "name":"javafx.scene.chart.DropShadow"
+},
+{
+  "name":"javafx.scene.chart.GaussianBlur"
+},
+{
+  "name":"javafx.scene.chart.Image"
+},
+{
+  "name":"javafx.scene.chart.ImageView"
+},
+{
+  "name":"javafx.scene.chart.Label"
+},
+{
+  "name":"javafx.scene.chart.LineChart",
+  "queryAllDeclaredMethods":true,
+  "queryAllPublicMethods":true,
+  "queryAllPublicConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":["javafx.scene.chart.Axis","javafx.scene.chart.Axis"] }]
+},
+{
+  "name":"javafx.scene.chart.NumberAxis",
+  "queryAllDeclaredMethods":true,
+  "queryAllPublicConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"javafx.scene.chart.Pane"
+},
+{
+  "name":"javafx.scene.chart.PasswordField"
+},
+{
+  "name":"javafx.scene.chart.TextField"
+},
+{
+  "name":"javafx.scene.chart.VBox"
+},
+{
+  "name":"javafx.scene.chart.ValueAxis",
+  "queryAllDeclaredMethods":true,
+  "methods":[{"name":"setLowerBound","parameterTypes":["double"] }]
+},
+{
+  "name":"javafx.scene.chart.XYChart",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"javafx.scene.control.Blend"
+},
+{
+  "name":"javafx.scene.control.Bloom"
+},
+{
   "name":"javafx.scene.control.BorderPane"
 },
 {
@@ -306,6 +918,12 @@
   "methods":[{"name":"setOnAction","parameterTypes":["javafx.event.EventHandler"] }]
 },
 {
+  "name":"javafx.scene.control.ColorAdjust"
+},
+{
+  "name":"javafx.scene.control.ColorInput"
+},
+{
   "name":"javafx.scene.control.Control",
   "queryAllDeclaredMethods":true
 },
@@ -313,7 +931,13 @@
   "name":"javafx.scene.control.DropShadow"
 },
 {
+  "name":"javafx.scene.control.GaussianBlur"
+},
+{
   "name":"javafx.scene.control.Image"
+},
+{
+  "name":"javafx.scene.control.ImageInput"
 },
 {
   "name":"javafx.scene.control.ImageView"
@@ -333,11 +957,39 @@
   "name":"javafx.scene.control.Pane"
 },
 {
+  "name":"javafx.scene.control.PasswordField",
+  "queryAllDeclaredMethods":true,
+  "queryAllPublicConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"javafx.scene.control.TextField",
+  "queryAllDeclaredMethods":true,
+  "queryAllPublicConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"setOnAction","parameterTypes":["javafx.event.EventHandler"] }]
+},
+{
+  "name":"javafx.scene.control.TextInputControl",
+  "queryAllDeclaredMethods":true,
+  "methods":[{"name":"setPromptText","parameterTypes":["java.lang.String"] }, {"name":"setText","parameterTypes":["java.lang.String"] }]
+},
+{
   "name":"javafx.scene.control.VBox"
+},
+{
+  "name":"javafx.scene.effect.Blend",
+  "queryAllDeclaredMethods":true,
+  "queryAllPublicConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"setBottomInput","parameterTypes":["javafx.scene.effect.Effect"] }, {"name":"setMode","parameterTypes":["javafx.scene.effect.BlendMode"] }, {"name":"setTopInput","parameterTypes":["javafx.scene.effect.Effect"] }]
 },
 {
   "name":"javafx.scene.effect.BlendMode",
   "methods":[{"name":"valueOf","parameterTypes":["java.lang.String"] }]
+},
+{
+  "name":"javafx.scene.effect.Bloom",
+  "queryAllPublicConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
 },
 {
   "name":"javafx.scene.effect.BorderPane"
@@ -349,6 +1001,18 @@
   "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"setHeight","parameterTypes":["double"] }, {"name":"setWidth","parameterTypes":["double"] }]
 },
 {
+  "name":"javafx.scene.effect.ColorAdjust",
+  "queryAllDeclaredMethods":true,
+  "queryAllPublicConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"setBrightness","parameterTypes":["double"] }, {"name":"setContrast","parameterTypes":["double"] }, {"name":"setHue","parameterTypes":["double"] }, {"name":"setInput","parameterTypes":["javafx.scene.effect.Effect"] }, {"name":"setSaturation","parameterTypes":["double"] }]
+},
+{
+  "name":"javafx.scene.effect.ColorInput",
+  "queryAllDeclaredMethods":true,
+  "queryAllPublicConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"setHeight","parameterTypes":["double"] }, {"name":"setPaint","parameterTypes":["javafx.scene.paint.Paint"] }, {"name":"setWidth","parameterTypes":["double"] }]
+},
+{
   "name":"javafx.scene.effect.DropShadow",
   "queryAllDeclaredMethods":true,
   "queryAllPublicConstructors":true,
@@ -356,10 +1020,24 @@
 },
 {
   "name":"javafx.scene.effect.Effect",
-  "queryAllDeclaredMethods":true
+  "queryAllDeclaredMethods":true,
+  "fields":[{"name":"peer"}],
+  "methods":[{"name":"markDirty","parameterTypes":["com.sun.javafx.effect.EffectDirtyBits"] }]
+},
+{
+  "name":"javafx.scene.effect.GaussianBlur",
+  "queryAllDeclaredMethods":true,
+  "queryAllPublicConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"setRadius","parameterTypes":["double"] }]
 },
 {
   "name":"javafx.scene.effect.Image"
+},
+{
+  "name":"javafx.scene.effect.ImageInput",
+  "queryAllDeclaredMethods":true,
+  "queryAllPublicConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"setSource","parameterTypes":["javafx.scene.image.Image"] }]
 },
 {
   "name":"javafx.scene.effect.ImageView"
@@ -387,6 +1065,9 @@
 },
 {
   "name":"javafx.scene.image.VBox"
+},
+{
+  "name":"javafx.scene.input.Clipboard"
 },
 {
   "name":"javafx.scene.layout.BorderPane",
@@ -420,6 +1101,24 @@
   "methods":[{"name":"valueOf","parameterTypes":["java.lang.String"] }]
 },
 {
+  "name":"javafx.scene.shape.ClosePath"
+},
+{
+  "name":"javafx.scene.shape.Line"
+},
+{
+  "name":"javafx.scene.shape.LineTo"
+},
+{
+  "name":"javafx.scene.shape.MoveTo"
+},
+{
+  "name":"javafx.scene.shape.Path"
+},
+{
+  "name":"javafx.scene.shape.PathElement"
+},
+{
   "name":"javafx.scene.shape.Rectangle"
 },
 {
@@ -442,21 +1141,639 @@
   "name":"javafx.scene.web.WebView"
 },
 {
+  "name":"javafx.stage.PopupWindow"
+},
+{
   "name":"javafx.stage.Stage"
 },
 {
   "name":"javafx.stage.Window"
 },
 {
+  "name":"javax.json.JsonValue"
+},
+{
+  "name":"javax.management.MBeanOperationInfo",
+  "queryAllPublicMethods":true,
+  "methods":[{"name":"getSignature","parameterTypes":[] }]
+},
+{
+  "name":"javax.management.MBeanServerBuilder",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"javax.management.MXBean",
+  "queryAllPublicMethods":true
+},
+{
+  "name":"javax.management.ObjectName"
+},
+{
+  "name":"javax.management.StandardEmitterMBean",
+  "methods":[{"name":"cacheMBeanInfo","parameterTypes":["javax.management.MBeanInfo"] }, {"name":"getCachedMBeanInfo","parameterTypes":[] }, {"name":"getMBeanInfo","parameterTypes":[] }]
+},
+{
+  "name":"javax.management.openmbean.CompositeData"
+},
+{
+  "name":"javax.management.openmbean.OpenMBeanOperationInfoSupport"
+},
+{
+  "name":"javax.management.openmbean.TabularData"
+},
+{
+  "name":"javax.security.auth.kerberos.KerberosCredMessage"
+},
+{
+  "name":"javax.security.auth.x500.X500Principal",
+  "fields":[{"name":"thisX500Name"}],
+  "methods":[{"name":"<init>","parameterTypes":["sun.security.x509.X500Name"] }]
+},
+{
+  "name":"jdk.internal.misc.Unsafe"
+},
+{
+  "name":"jdk.management.jfr.ConfigurationInfo",
+  "queryAllPublicMethods":true
+},
+{
+  "name":"jdk.management.jfr.EventTypeInfo",
+  "queryAllPublicMethods":true
+},
+{
+  "name":"jdk.management.jfr.FlightRecorderMXBean",
+  "queryAllPublicMethods":true
+},
+{
+  "name":"jdk.management.jfr.FlightRecorderMXBeanImpl",
+  "queryAllPublicConstructors":true,
+  "methods":[{"name":"cacheMBeanInfo","parameterTypes":["javax.management.MBeanInfo"] }, {"name":"getCachedMBeanInfo","parameterTypes":[] }, {"name":"getMBeanInfo","parameterTypes":[] }, {"name":"getNotificationInfo","parameterTypes":[] }]
+},
+{
+  "name":"jdk.management.jfr.RecordingInfo",
+  "queryAllPublicMethods":true
+},
+{
+  "name":"jdk.management.jfr.SettingDescriptorInfo",
+  "queryAllPublicMethods":true
+},
+{
+  "name":"oracle.as.jmx.framework.PortableMBeanFactory"
+},
+{
+  "name":"oracle.i18n.text.OraBoot"
+},
+{
+  "name":"oracle.i18n.text.converter.CharacterConverterSJIS"
+},
+{
+  "name":"oracle.jdbc.AdditionalDatabaseMetaData",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"oracle.jdbc.OracleArray",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"oracle.jdbc.OracleBfile",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"oracle.jdbc.OracleBlob",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"oracle.jdbc.OracleCallableStatement",
+  "queryAllDeclaredMethods":true,
+  "methods":[{"name":"execute","parameterTypes":[] }, {"name":"execute","parameterTypes":["java.lang.String"] }, {"name":"execute","parameterTypes":["java.lang.String","int"] }, {"name":"execute","parameterTypes":["java.lang.String","int[]"] }, {"name":"execute","parameterTypes":["java.lang.String","java.lang.String[]"] }, {"name":"executeQuery","parameterTypes":[] }, {"name":"executeQuery","parameterTypes":["java.lang.String"] }, {"name":"executeUpdate","parameterTypes":[] }, {"name":"executeUpdate","parameterTypes":["java.lang.String"] }, {"name":"executeUpdate","parameterTypes":["java.lang.String","int"] }, {"name":"executeUpdate","parameterTypes":["java.lang.String","int[]"] }, {"name":"executeUpdate","parameterTypes":["java.lang.String","java.lang.String[]"] }]
+},
+{
+  "name":"oracle.jdbc.OracleClob",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"oracle.jdbc.OracleConnection",
+  "queryAllDeclaredMethods":true,
+  "fields":[{"name":"CONNECTION_PROPERTY_ACCESS_TOKEN"}, {"name":"CONNECTION_PROPERTY_ACCUMULATE_BATCH_RESULT"}, {"name":"CONNECTION_PROPERTY_ALLOWED_LOGON_VERSION"}, {"name":"CONNECTION_PROPERTY_ALLOW_MIXING_JDBC_AND_NAMED_BINDS"}, {"name":"CONNECTION_PROPERTY_ALLOW_SINGLE_SHARD_TRANSACTION_SUPPORT"}, {"name":"CONNECTION_PROPERTY_ASYNC_CURSOR_LIMIT"}, {"name":"CONNECTION_PROPERTY_AUTOCOMMIT"}, {"name":"CONNECTION_PROPERTY_AUTO_COMMIT_SPEC_COMPLIANT"}, {"name":"CONNECTION_PROPERTY_AZURE_DATABASE_APPLICATION_ID_URI"}, {"name":"CONNECTION_PROPERTY_BIND_USE_D_B_A"}, {"name":"CONNECTION_PROPERTY_BLOCK_SOURCE_IMPL"}, {"name":"CONNECTION_PROPERTY_CALCULATE_CHECKSUM"}, {"name":"CONNECTION_PROPERTY_CLIENT_CERTIFICATE"}, {"name":"CONNECTION_PROPERTY_CLIENT_CERTIFICATE_PASSWORD"}, {"name":"CONNECTION_PROPERTY_CLIENT_ID"}, {"name":"CONNECTION_PROPERTY_CLIENT_SECRET"}, {"name":"CONNECTION_PROPERTY_COMBINED_INITIALIZATION_ROUNDTRIPS"}, {"name":"CONNECTION_PROPERTY_COMMIT_OPTION"}, {"name":"CONNECTION_PROPERTY_COMMIT_SELECT_ON_AUTOCOMMIT"}, {"name":"CONNECTION_PROPERTY_CONFIGURATION_PROVIDERS"}, {"name":"CONNECTION_PROPERTY_CONFIG_FILE"}, {"name":"CONNECTION_PROPERTY_CONTINUE_BATCH_ON_ERROR"}, {"name":"CONNECTION_PROPERTY_CONVERT_NCHAR_LITERALS"}, {"name":"CONNECTION_PROPERTY_CREATE_DESCRIPTOR_USE_CURRENT_SCHEMA_FOR_SCHEMA_NAME"}, {"name":"CONNECTION_PROPERTY_DATABASE"}, {"name":"CONNECTION_PROPERTY_DATABASE_STATE_REQUIREMENT"}, {"name":"CONNECTION_PROPERTY_DEBUG_S_Q_LS"}, {"name":"CONNECTION_PROPERTY_DEBUG_TENANTS"}, {"name":"CONNECTION_PROPERTY_DEFAULTAUTOCOMMIT"}, {"name":"CONNECTION_PROPERTY_DEFAULTNCHAR"}, {"name":"CONNECTION_PROPERTY_DEFAULT_CONNECTION_VALIDATION"}, {"name":"CONNECTION_PROPERTY_DEFAULT_EXECUTE_BATCH"}, {"name":"CONNECTION_PROPERTY_DEFAULT_LOB_PREFETCH_SIZE"}, {"name":"CONNECTION_PROPERTY_DEFAULT_ROW_PREFETCH"}, {"name":"CONNECTION_PROPERTY_DIAGNOSTIC_BUFFER_SIZE"}, {"name":"CONNECTION_PROPERTY_DIAGNOSTIC_LOGGER_NAME"}, {"name":"CONNECTION_PROPERTY_DISABLED_BUG_FIXES"}, {"name":"CONNECTION_PROPERTY_DISABLE_DEFINECOLUMNTYPE"}, {"name":"CONNECTION_PROPERTY_DMS_PARENT_NAME"}, {"name":"CONNECTION_PROPERTY_DMS_PARENT_TYPE"}, {"name":"CONNECTION_PROPERTY_DMS_STMT_CACHING_METRICS"}, {"name":"CONNECTION_PROPERTY_DMS_STMT_METRICS"}, {"name":"CONNECTION_PROPERTY_DOWN_HOSTS_TIMEOUT"}, {"name":"CONNECTION_PROPERTY_DRCP_CONNECTION_CLASS"}, {"name":"CONNECTION_PROPERTY_DRCP_CONNECTION_PURITY"}, {"name":"CONNECTION_PROPERTY_DRCP_MULTIPLEXING_IN_REQUEST_A_P_IS"}, {"name":"CONNECTION_PROPERTY_DRCP_P_L_S_Q_L_CALLBACK"}, {"name":"CONNECTION_PROPERTY_DRCP_TAG_NAME"}, {"name":"CONNECTION_PROPERTY_DRIVER_NAME_ATTRIBUTE"}, {"name":"CONNECTION_PROPERTY_EDITION_NAME"}, {"name":"CONNECTION_PROPERTY_ENABLE_A_C_SUPPORT"}, {"name":"CONNECTION_PROPERTY_ENABLE_DATA_IN_LOCATOR"}, {"name":"CONNECTION_PROPERTY_ENABLE_ERROR_URL"}, {"name":"CONNECTION_PROPERTY_ENABLE_IMPLICIT_REQUESTS"}, {"name":"CONNECTION_PROPERTY_ENABLE_O_C_I_F_A_N"}, {"name":"CONNECTION_PROPERTY_ENABLE_QUERY_RESULT_CACHE"}, {"name":"CONNECTION_PROPERTY_ENABLE_READ_DATA_IN_LOCATOR"}, {"name":"CONNECTION_PROPERTY_ENABLE_S_S_S_CURSOR"}, {"name":"CONNECTION_PROPERTY_ENABLE_TEMP_LOB_REF_CNT"}, {"name":"CONNECTION_PROPERTY_ENABLE_T_G_SUPPORT"}, {"name":"CONNECTION_PROPERTY_FAN_ENABLED"}, {"name":"CONNECTION_PROPERTY_FETCH_SIZE_TUNING"}, {"name":"CONNECTION_PROPERTY_FIXED_STRING"}, {"name":"CONNECTION_PROPERTY_FORCE_A_L32_U_T_F8_FOR_COMBINED_ROUNDTRIPS"}, {"name":"CONNECTION_PROPERTY_IGNORE_REPLAY_CONTEXT_FROM_AUTHENTICATION"}, {"name":"CONNECTION_PROPERTY_IMPLICIT_STATEMENT_CACHE_SIZE"}, {"name":"CONNECTION_PROPERTY_INBAND_NOTIFICATION"}, {"name":"CONNECTION_PROPERTY_INCLUDE_SYNONYMS"}, {"name":"CONNECTION_PROPERTY_INTERNAL_LOGON"}, {"name":"CONNECTION_PROPERTY_IS_DIAGNOSE_FIRST_FAILURE_ENABLED"}, {"name":"CONNECTION_PROPERTY_IS_LOB_PREFETCH_DATA_RETAINED"}, {"name":"CONNECTION_PROPERTY_IS_LOGGING_ENABLED"}, {"name":"CONNECTION_PROPERTY_IS_METRICS_ENABLED"}, {"name":"CONNECTION_PROPERTY_IS_OBSERVABILITY_ENABLED"}, {"name":"CONNECTION_PROPERTY_IS_OLD_UPDATEABLE_RESULT_SET"}, {"name":"CONNECTION_PROPERTY_IS_PERMIT_SENSITIVE_DIAGNOSTICS"}, {"name":"CONNECTION_PROPERTY_IS_QUICK_ASCII_CONVERSION"}, {"name":"CONNECTION_PROPERTY_IS_RESULT_SET_CACHE_ENABLED__I_G_N_O_R_E_D"}, {"name":"CONNECTION_PROPERTY_IS_RESULT_SET_CACHE_ENABLED__I_G_N_O_R_E_D2"}, {"name":"CONNECTION_PROPERTY_IS_SENSITIVE_DIAGNOSTICS_ENABLED"}, {"name":"CONNECTION_PROPERTY_IS_STRICT_ASCII_CONVERSION"}, {"name":"CONNECTION_PROPERTY_IS_USE_TCP_FAST_OPEN"}, {"name":"CONNECTION_PROPERTY_IS_WRITE_LOGS_TO_DIAGNOSE_FIRST_FAILURE"}, {"name":"CONNECTION_PROPERTY_J2EE13_COMPLIANT"}, {"name":"CONNECTION_PROPERTY_JAVA_NET_LOCAL_I_P_FOR_MSGQ"}, {"name":"CONNECTION_PROPERTY_JAVA_NET_MSGQ_BUSY_WAIT"}, {"name":"CONNECTION_PROPERTY_JAVA_NET_MSGQ_KERNEL_WAIT"}, {"name":"CONNECTION_PROPERTY_JAVA_NET_MSGQ_TRANSPORT"}, {"name":"CONNECTION_PROPERTY_JAVA_NET_NIO"}, {"name":"CONNECTION_PROPERTY_JDBC_STANDARD_BEHAVIOR"}, {"name":"CONNECTION_PROPERTY_JMS_NOTIFICATION_CONNECTION"}, {"name":"CONNECTION_PROPERTY_JSON_DEFAULT_GET_OBJECT_TYPE"}, {"name":"CONNECTION_PROPERTY_KEEP_ALIVE"}, {"name":"CONNECTION_PROPERTY_LOB_STREAM_POS_STANDARD_COMPLIANT"}, {"name":"CONNECTION_PROPERTY_LOCAL_HOST_NAME"}, {"name":"CONNECTION_PROPERTY_LOGIN_TIMEOUT"}, {"name":"CONNECTION_PROPERTY_LOGON_CAP"}, {"name":"CONNECTION_PROPERTY_MAP_DATE_TO_TIMESTAMP"}, {"name":"CONNECTION_PROPERTY_MAX_BATCH_MEMORY"}, {"name":"CONNECTION_PROPERTY_MAX_CACHED_BUFFER_SIZE"}, {"name":"CONNECTION_PROPERTY_NETWORK_COMPRESSION"}, {"name":"CONNECTION_PROPERTY_NETWORK_COMPRESSION_LEVELS"}, {"name":"CONNECTION_PROPERTY_NETWORK_COMPRESSION_THRESHOLD"}, {"name":"CONNECTION_PROPERTY_NEW_PASSWORD_VALUE"}, {"name":"CONNECTION_PROPERTY_NLS_LANG_BACKDOOR"}, {"name":"CONNECTION_PROPERTY_NS_DIRECT_BUFFER"}, {"name":"CONNECTION_PROPERTY_OCI_COMPARTMENT"}, {"name":"CONNECTION_PROPERTY_OCI_CONFIG_FILE"}, {"name":"CONNECTION_PROPERTY_OCI_CONNECTION_POOL_CONN_I_D"}, {"name":"CONNECTION_PROPERTY_OCI_CONNECTION_POOL_INCREMENT"}, {"name":"CONNECTION_PROPERTY_OCI_CONNECTION_POOL_IS_POOLING"}, {"name":"CONNECTION_PROPERTY_OCI_CONNECTION_POOL_LOGON_MODE"}, {"name":"CONNECTION_PROPERTY_OCI_CONNECTION_POOL_MAX_LIMIT"}, {"name":"CONNECTION_PROPERTY_OCI_CONNECTION_POOL_MIN_LIMIT"}, {"name":"CONNECTION_PROPERTY_OCI_CONNECTION_POOL_NO_WAIT"}, {"name":"CONNECTION_PROPERTY_OCI_CONNECTION_POOL_OBJECT"}, {"name":"CONNECTION_PROPERTY_OCI_CONNECTION_POOL_PROXY_CERTIFICATE"}, {"name":"CONNECTION_PROPERTY_OCI_CONNECTION_POOL_PROXY_DISTINGUISHED_NAME"}, {"name":"CONNECTION_PROPERTY_OCI_CONNECTION_POOL_PROXY_NUM_ROLES"}, {"name":"CONNECTION_PROPERTY_OCI_CONNECTION_POOL_PROXY_PASSWORD"}, {"name":"CONNECTION_PROPERTY_OCI_CONNECTION_POOL_PROXY_ROLES"}, {"name":"CONNECTION_PROPERTY_OCI_CONNECTION_POOL_PROXY_TYPE"}, {"name":"CONNECTION_PROPERTY_OCI_CONNECTION_POOL_PROXY_USER_NAME"}, {"name":"CONNECTION_PROPERTY_OCI_CONNECTION_POOL_TIMEOUT"}, {"name":"CONNECTION_PROPERTY_OCI_CONNECTION_POOL_TRANSACTION_DISTRIBUTED"}, {"name":"CONNECTION_PROPERTY_OCI_DATABASE"}, {"name":"CONNECTION_PROPERTY_OCI_DRIVER_CHARSET"}, {"name":"CONNECTION_PROPERTY_OCI_ENV_HANDLE"}, {"name":"CONNECTION_PROPERTY_OCI_ERR_HANDLE"}, {"name":"CONNECTION_PROPERTY_OCI_EXTERNAL_AUTHENTICATION"}, {"name":"CONNECTION_PROPERTY_OCI_IAM_URL"}, {"name":"CONNECTION_PROPERTY_OCI_PROFILE"}, {"name":"CONNECTION_PROPERTY_OCI_SVC_CTX_HANDLE"}, {"name":"CONNECTION_PROPERTY_OCI_TENANCY"}, {"name":"CONNECTION_PROPERTY_ONS_PROTOCOL"}, {"name":"CONNECTION_PROPERTY_ONS_WALLET_FILE"}, {"name":"CONNECTION_PROPERTY_ONS_WALLET_PASSWORD"}, {"name":"CONNECTION_PROPERTY_OVERRIDE_ENABLE_READ_DATA_IN_LOCATOR"}, {"name":"CONNECTION_PROPERTY_PARAMETER_METADATA_CACHE_INCLUDE_PARSING"}, {"name":"CONNECTION_PROPERTY_PARAMETER_METADATA_CACHE_SIZE"}, {"name":"CONNECTION_PROPERTY_PARAMETER_METADATA_PREPROCESS"}, {"name":"CONNECTION_PROPERTY_PASSWORD_AUTHENTICATION"}, {"name":"CONNECTION_PROPERTY_PERMIT_TIMESTAMP_DATE_MISMATCH"}, {"name":"CONNECTION_PROPERTY_PLSQL_VARCHAR_PARAMETER4_K_ONLY"}, {"name":"CONNECTION_PROPERTY_PRELIM_AUTH"}, {"name":"CONNECTION_PROPERTY_PROCESS_ESCAPES"}, {"name":"CONNECTION_PROPERTY_PROTOCOL"}, {"name":"CONNECTION_PROPERTY_PROXY_CLIENT_NAME"}, {"name":"CONNECTION_PROPERTY_READ_ONLY_INSTANCE_ALLOWED"}, {"name":"CONNECTION_PROPERTY_REDIRECT_URI"}, {"name":"CONNECTION_PROPERTY_REMOTE_CONFIGURATION_FILTERING"}, {"name":"CONNECTION_PROPERTY_REPORT_REMARKS"}, {"name":"CONNECTION_PROPERTY_REQUEST_SIZE_LIMIT"}, {"name":"CONNECTION_PROPERTY_RESOURCE_MANAGER_ID"}, {"name":"CONNECTION_PROPERTY_RESTRICT_GETTABLES"}, {"name":"CONNECTION_PROPERTY_RETAIN_V9_BIND_BEHAVIOR"}, {"name":"CONNECTION_PROPERTY_SEND_ALL_DATA_FOR_VALUE_LOBS"}, {"name":"CONNECTION_PROPERTY_SEND_BOOLEAN_AS_NATIVE_BOOLEAN"}, {"name":"CONNECTION_PROPERTY_SEND_BOOLEAN_IN_P_L_S_Q_L"}, {"name":"CONNECTION_PROPERTY_SET_FLOAT_AND_DOUBLE_USE_BINARY"}, {"name":"CONNECTION_PROPERTY_SOCKS_PROXY_HOST"}, {"name":"CONNECTION_PROPERTY_SOCKS_PROXY_PORT"}, {"name":"CONNECTION_PROPERTY_SOCKS_REMOTE_D_N_S"}, {"name":"CONNECTION_PROPERTY_SQL_ERROR_TRANSLATION_FILE"}, {"name":"CONNECTION_PROPERTY_SQL_TRANSLATION_PROFILE"}, {"name":"CONNECTION_PROPERTY_SSL_CONTEXT_PROTOCOL"}, {"name":"CONNECTION_PROPERTY_STREAM_CHUNK_SIZE"}, {"name":"CONNECTION_PROPERTY_TARGET_INSTANCE_NAME"}, {"name":"CONNECTION_PROPERTY_TARGET_SERVICE_NAME"}, {"name":"CONNECTION_PROPERTY_TARGET_SHARDING_KEY"}, {"name":"CONNECTION_PROPERTY_TARGET_SUPER_SHARDING_KEY"}, {"name":"CONNECTION_PROPERTY_TCP_KEEP_COUNT"}, {"name":"CONNECTION_PROPERTY_TCP_KEEP_IDLE"}, {"name":"CONNECTION_PROPERTY_TCP_KEEP_INTERVAL"}, {"name":"CONNECTION_PROPERTY_TENANT_ID"}, {"name":"CONNECTION_PROPERTY_THIN_DEBUG_J_D_W_P"}, {"name":"CONNECTION_PROPERTY_THIN_FORCE_DNS_LOAD_BALANCING"}, {"name":"CONNECTION_PROPERTY_THIN_HTTPS_PROXY_HOST"}, {"name":"CONNECTION_PROPERTY_THIN_HTTPS_PROXY_PORT"}, {"name":"CONNECTION_PROPERTY_THIN_JAVAX_NET_SSL_KEYSTORE"}, {"name":"CONNECTION_PROPERTY_THIN_JAVAX_NET_SSL_KEYSTOREPASSWORD"}, {"name":"CONNECTION_PROPERTY_THIN_JAVAX_NET_SSL_KEYSTORETYPE"}, {"name":"CONNECTION_PROPERTY_THIN_JAVAX_NET_SSL_TRUSTSTORE"}, {"name":"CONNECTION_PROPERTY_THIN_JAVAX_NET_SSL_TRUSTSTOREPASSWORD"}, {"name":"CONNECTION_PROPERTY_THIN_JAVAX_NET_SSL_TRUSTSTORETYPE"}, {"name":"CONNECTION_PROPERTY_THIN_JNDI_LDAP_CONNECT_TIMEOUT"}, {"name":"CONNECTION_PROPERTY_THIN_JNDI_LDAP_READ_TIMEOUT"}, {"name":"CONNECTION_PROPERTY_THIN_LDAPSSL_CONTEXT_PROTOCOL"}, {"name":"CONNECTION_PROPERTY_THIN_LDAP_SECURITY_AUTHENTICATION"}, {"name":"CONNECTION_PROPERTY_THIN_LDAP_SECURITY_CREDETIALS"}, {"name":"CONNECTION_PROPERTY_THIN_LDAP_SECURITY_PRINCIPAL"}, {"name":"CONNECTION_PROPERTY_THIN_LDAP_SSL_CIPHER_SUITES"}, {"name":"CONNECTION_PROPERTY_THIN_LDAP_SSL_KEY_MANAGER_FACTORY_ALGO"}, {"name":"CONNECTION_PROPERTY_THIN_LDAP_SSL_KEY_STORE"}, {"name":"CONNECTION_PROPERTY_THIN_LDAP_SSL_KEY_STORE_PWD"}, {"name":"CONNECTION_PROPERTY_THIN_LDAP_SSL_KEY_STORE_TYPE"}, {"name":"CONNECTION_PROPERTY_THIN_LDAP_SSL_TRUST_MANAGER_FACTORY_ALGO"}, {"name":"CONNECTION_PROPERTY_THIN_LDAP_SSL_TRUST_STORE"}, {"name":"CONNECTION_PROPERTY_THIN_LDAP_SSL_TRUST_STORE_PASSWORD"}, {"name":"CONNECTION_PROPERTY_THIN_LDAP_SSL_TRUST_STORE_TYPE"}, {"name":"CONNECTION_PROPERTY_THIN_LDAP_SSL_VERSIONS"}, {"name":"CONNECTION_PROPERTY_THIN_LDAP_SSL_WALLET_LOCATION"}, {"name":"CONNECTION_PROPERTY_THIN_LDAP_SSL_WALLET_PASSWORD"}, {"name":"CONNECTION_PROPERTY_THIN_NET_ALLOW_WEAK_CRYPTO"}, {"name":"CONNECTION_PROPERTY_THIN_NET_AUTHENTICATION_KRB5_CC_NAME"}, {"name":"CONNECTION_PROPERTY_THIN_NET_AUTHENTICATION_KRB5_MUTUAL"}, {"name":"CONNECTION_PROPERTY_THIN_NET_AUTHENTICATION_KRB_JAAS_LOGIN_MODULE"}, {"name":"CONNECTION_PROPERTY_THIN_NET_AUTHENTICATION_KRB_REALM"}, {"name":"CONNECTION_PROPERTY_THIN_NET_AUTHENTICATION_SERVICES"}, {"name":"CONNECTION_PROPERTY_THIN_NET_CHECKSUM_LEVEL"}, {"name":"CONNECTION_PROPERTY_THIN_NET_CHECKSUM_TYPES"}, {"name":"CONNECTION_PROPERTY_THIN_NET_CONNECTION_ID_PREFIX"}, {"name":"CONNECTION_PROPERTY_THIN_NET_CONNECT_TIMEOUT"}, {"name":"CONNECTION_PROPERTY_THIN_NET_CRYPTO_SEED"}, {"name":"CONNECTION_PROPERTY_THIN_NET_DISABLE_OUT_OF_BAND_BREAK"}, {"name":"CONNECTION_PROPERTY_THIN_NET_ENCRYPTION_LEVEL"}, {"name":"CONNECTION_PROPERTY_THIN_NET_ENCRYPTION_TYPES"}, {"name":"CONNECTION_PROPERTY_THIN_NET_OLDSYNTAX"}, {"name":"CONNECTION_PROPERTY_THIN_NET_PROFILE"}, {"name":"CONNECTION_PROPERTY_THIN_NET_RADIUS_C_R_HANDLER"}, {"name":"CONNECTION_PROPERTY_THIN_NET_SET_F_I_P_S_MODE"}, {"name":"CONNECTION_PROPERTY_THIN_NET_USE_ZERO_COPY_I_O"}, {"name":"CONNECTION_PROPERTY_THIN_OUTBOUND_CONNECT_TIMEOUT"}, {"name":"CONNECTION_PROPERTY_THIN_READ_TIMEOUT"}, {"name":"CONNECTION_PROPERTY_THIN_SSL_ALLOW_WEAK_DN_MATCH"}, {"name":"CONNECTION_PROPERTY_THIN_SSL_CERTIFICATE_ALIAS"}, {"name":"CONNECTION_PROPERTY_THIN_SSL_CERTIFICATE_THUMBPRINT"}, {"name":"CONNECTION_PROPERTY_THIN_SSL_CIPHER_SUITES"}, {"name":"CONNECTION_PROPERTY_THIN_SSL_KEYMANAGERFACTORY_ALGORITHM"}, {"name":"CONNECTION_PROPERTY_THIN_SSL_SERVER_CERT_DN"}, {"name":"CONNECTION_PROPERTY_THIN_SSL_SERVER_DN_MATCH"}, {"name":"CONNECTION_PROPERTY_THIN_SSL_TRUSTMANAGERFACTORY_ALGORITHM"}, {"name":"CONNECTION_PROPERTY_THIN_SSL_VERSION"}, {"name":"CONNECTION_PROPERTY_THIN_TCP_NO_DELAY"}, {"name":"CONNECTION_PROPERTY_THIN_USE_J_C_E_A_P_I"}, {"name":"CONNECTION_PROPERTY_THIN_VSESSION_ENAME"}, {"name":"CONNECTION_PROPERTY_THIN_VSESSION_INAME"}, {"name":"CONNECTION_PROPERTY_THIN_VSESSION_MACHINE"}, {"name":"CONNECTION_PROPERTY_THIN_VSESSION_OSUSER"}, {"name":"CONNECTION_PROPERTY_THIN_VSESSION_PROCESS"}, {"name":"CONNECTION_PROPERTY_THIN_VSESSION_PROGRAM"}, {"name":"CONNECTION_PROPERTY_THIN_VSESSION_TERMINAL"}, {"name":"CONNECTION_PROPERTY_TIMESTAMPTZ_IN_GMT"}, {"name":"CONNECTION_PROPERTY_TIMEZONE_AS_REGION"}, {"name":"CONNECTION_PROPERTY_TNS_ADMIN"}, {"name":"CONNECTION_PROPERTY_TOKEN_AUTHENTICATION"}, {"name":"CONNECTION_PROPERTY_TOKEN_LOCATION"}, {"name":"CONNECTION_PROPERTY_TTC_COOKIE_CACHE_SIZE"}, {"name":"CONNECTION_PROPERTY_TTC_COOKIE_OPTIMIZATION_ENABLED"}, {"name":"CONNECTION_PROPERTY_USE1900_AS_YEAR_FOR_TIME"}, {"name":"CONNECTION_PROPERTY_USER_NAME"}, {"name":"CONNECTION_PROPERTY_USE_D_R_C_P_MULTIPLETAG"}, {"name":"CONNECTION_PROPERTY_USE_FETCH_SIZE_WITH_LONG_COLUMN"}, {"name":"CONNECTION_PROPERTY_USE_NIO"}, {"name":"CONNECTION_PROPERTY_USE_O_C_I_DEFAULT_DEFINES"}, {"name":"CONNECTION_PROPERTY_USE_SHARDING_DRIVER_CONNECTION"}, {"name":"CONNECTION_PROPERTY_USE_THREAD_LOCAL_BUFFER_CACHE"}, {"name":"CONNECTION_PROPERTY_USE_TRUE_CACHE_DRIVER_CONNECTION"}, {"name":"CONNECTION_PROPERTY_VECTOR_DEFAULT_GET_OBJECT_TYPE"}, {"name":"CONNECTION_PROPERTY_WALLET_LOCATION"}, {"name":"CONNECTION_PROPERTY_WALLET_PASSWORD"}, {"name":"CONNECTION_PROPERTY_WEBSOCKET_PASSWORD"}, {"name":"CONNECTION_PROPERTY_WEBSOCKET_USER"}]
+},
+{
+  "name":"oracle.jdbc.OracleDriver"
+},
+{
+  "name":"oracle.jdbc.OracleNClob",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"oracle.jdbc.OracleOpaque",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"oracle.jdbc.OracleParameterMetaData",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"oracle.jdbc.OraclePreparedStatement",
+  "queryAllDeclaredMethods":true,
+  "methods":[{"name":"execute","parameterTypes":[] }, {"name":"execute","parameterTypes":["java.lang.String"] }, {"name":"execute","parameterTypes":["java.lang.String","int"] }, {"name":"execute","parameterTypes":["java.lang.String","int[]"] }, {"name":"execute","parameterTypes":["java.lang.String","java.lang.String[]"] }, {"name":"executeQuery","parameterTypes":[] }, {"name":"executeQuery","parameterTypes":["java.lang.String"] }, {"name":"executeUpdate","parameterTypes":[] }, {"name":"executeUpdate","parameterTypes":["java.lang.String"] }, {"name":"executeUpdate","parameterTypes":["java.lang.String","int"] }, {"name":"executeUpdate","parameterTypes":["java.lang.String","int[]"] }, {"name":"executeUpdate","parameterTypes":["java.lang.String","java.lang.String[]"] }]
+},
+{
+  "name":"oracle.jdbc.OracleRef",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"oracle.jdbc.OracleResultSet",
+  "queryAllDeclaredMethods":true,
+  "methods":[{"name":"last","parameterTypes":[] }, {"name":"next","parameterTypes":[] }]
+},
+{
+  "name":"oracle.jdbc.OracleResultSetMetaData",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"oracle.jdbc.OracleSavepoint",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"oracle.jdbc.OracleStatement",
+  "queryAllDeclaredMethods":true,
+  "methods":[{"name":"execute","parameterTypes":[] }, {"name":"execute","parameterTypes":["java.lang.String"] }, {"name":"execute","parameterTypes":["java.lang.String","int"] }, {"name":"execute","parameterTypes":["java.lang.String","int[]"] }, {"name":"execute","parameterTypes":["java.lang.String","java.lang.String[]"] }, {"name":"executeQuery","parameterTypes":[] }, {"name":"executeQuery","parameterTypes":["java.lang.String"] }, {"name":"executeUpdate","parameterTypes":[] }, {"name":"executeUpdate","parameterTypes":["java.lang.String"] }, {"name":"executeUpdate","parameterTypes":["java.lang.String","int"] }, {"name":"executeUpdate","parameterTypes":["java.lang.String","int[]"] }, {"name":"executeUpdate","parameterTypes":["java.lang.String","java.lang.String[]"] }]
+},
+{
+  "name":"oracle.jdbc.OracleStruct",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"oracle.jdbc.OracleTypeMetaData",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"oracle.jdbc.OracleTypeMetaData$Array",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"oracle.jdbc.OracleTypeMetaData$Opaque",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"oracle.jdbc.OracleTypeMetaData$Struct",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"oracle.jdbc.diagnostics.DefaultTraceEventListenerProvider"
+},
+{
+  "name":"oracle.jdbc.diagnostics.DiagnosticsMXBean",
+  "queryAllPublicMethods":true
+},
+{
+  "name":"oracle.jdbc.diagnostics.OracleDiagnosticsMXBean",
+  "queryAllPublicConstructors":true
+},
+{
+  "name":"oracle.jdbc.driver.GeneratedPhysicalConnection",
+  "allDeclaredFields":true
+},
+{
+  "name":"oracle.jdbc.driver.LiveDMSFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"oracle.jdbc.driver.T4CDriverExtension",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"oracle.jdbc.internal.ACProxyable",
+  "queryAllPublicMethods":true
+},
+{
+  "name":"oracle.jdbc.internal.AdditionalDatabaseMetaData",
+  "queryAllDeclaredMethods":true,
+  "methods":[{"name":"toString","parameterTypes":[] }]
+},
+{
+  "name":"oracle.jdbc.internal.ClientDataSupport",
+  "queryAllDeclaredMethods":true,
+  "methods":[{"name":"toString","parameterTypes":[] }]
+},
+{
+  "name":"oracle.jdbc.internal.OracleArray",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"oracle.jdbc.internal.OracleBfile",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"oracle.jdbc.internal.OracleBlob",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"oracle.jdbc.internal.OracleCallableStatement",
+  "queryAllDeclaredMethods":true,
+  "methods":[{"name":"execute","parameterTypes":[] }, {"name":"execute","parameterTypes":["java.lang.String"] }, {"name":"execute","parameterTypes":["java.lang.String","int"] }, {"name":"execute","parameterTypes":["java.lang.String","int[]"] }, {"name":"execute","parameterTypes":["java.lang.String","java.lang.String[]"] }, {"name":"executeQuery","parameterTypes":[] }, {"name":"executeQuery","parameterTypes":["java.lang.String"] }, {"name":"executeUpdate","parameterTypes":[] }, {"name":"executeUpdate","parameterTypes":["java.lang.String"] }, {"name":"executeUpdate","parameterTypes":["java.lang.String","int"] }, {"name":"executeUpdate","parameterTypes":["java.lang.String","int[]"] }, {"name":"executeUpdate","parameterTypes":["java.lang.String","java.lang.String[]"] }, {"name":"getResultSet","parameterTypes":[] }]
+},
+{
+  "name":"oracle.jdbc.internal.OracleClob",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"oracle.jdbc.internal.OracleConnection",
+  "queryAllDeclaredMethods":true,
+  "methods":[{"name":"acquireCloseableLock","parameterTypes":[] }, {"name":"createStatement","parameterTypes":[] }, {"name":"createStatement","parameterTypes":["int","int"] }, {"name":"createStatement","parameterTypes":["int","int","int"] }, {"name":"isUsable","parameterTypes":[] }, {"name":"isUsable","parameterTypes":["boolean"] }, {"name":"isValid","parameterTypes":["int"] }, {"name":"isValid","parameterTypes":["oracle.jdbc.OracleConnection$ConnectionValidation","int"] }, {"name":"pingDatabase","parameterTypes":[] }, {"name":"pingDatabase","parameterTypes":["int"] }, {"name":"prepareStatement","parameterTypes":["java.lang.String"] }, {"name":"prepareStatement","parameterTypes":["java.lang.String","int"] }, {"name":"prepareStatement","parameterTypes":["java.lang.String","int","int"] }, {"name":"prepareStatement","parameterTypes":["java.lang.String","int","int","int"] }, {"name":"prepareStatement","parameterTypes":["java.lang.String","int[]"] }, {"name":"prepareStatement","parameterTypes":["java.lang.String","java.lang.String[]"] }]
+},
+{
+  "name":"oracle.jdbc.internal.OracleNClob",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"oracle.jdbc.internal.OracleOpaque",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"oracle.jdbc.internal.OracleParameterMetaData",
+  "queryAllDeclaredMethods":true,
+  "methods":[{"name":"toString","parameterTypes":[] }]
+},
+{
+  "name":"oracle.jdbc.internal.OraclePreparedStatement",
+  "queryAllDeclaredMethods":true,
+  "methods":[{"name":"execute","parameterTypes":[] }, {"name":"execute","parameterTypes":["java.lang.String"] }, {"name":"execute","parameterTypes":["java.lang.String","int"] }, {"name":"execute","parameterTypes":["java.lang.String","int[]"] }, {"name":"execute","parameterTypes":["java.lang.String","java.lang.String[]"] }, {"name":"executeQuery","parameterTypes":[] }, {"name":"executeQuery","parameterTypes":["java.lang.String"] }, {"name":"executeUpdate","parameterTypes":[] }, {"name":"executeUpdate","parameterTypes":["java.lang.String"] }, {"name":"executeUpdate","parameterTypes":["java.lang.String","int"] }, {"name":"executeUpdate","parameterTypes":["java.lang.String","int[]"] }, {"name":"executeUpdate","parameterTypes":["java.lang.String","java.lang.String[]"] }, {"name":"getResultSet","parameterTypes":[] }]
+},
+{
+  "name":"oracle.jdbc.internal.OracleRef",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"oracle.jdbc.internal.OracleResultSet",
+  "queryAllDeclaredMethods":true,
+  "methods":[{"name":"last","parameterTypes":[] }, {"name":"next","parameterTypes":[] }]
+},
+{
+  "name":"oracle.jdbc.internal.OracleResultSetMetaData",
+  "queryAllDeclaredMethods":true,
+  "methods":[{"name":"toString","parameterTypes":[] }]
+},
+{
+  "name":"oracle.jdbc.internal.OracleRowId",
+  "queryAllDeclaredMethods":true,
+  "methods":[{"name":"toString","parameterTypes":[] }]
+},
+{
+  "name":"oracle.jdbc.internal.OracleSavepoint",
+  "queryAllDeclaredMethods":true,
+  "methods":[{"name":"toString","parameterTypes":[] }]
+},
+{
+  "name":"oracle.jdbc.internal.OracleStatement",
+  "queryAllDeclaredMethods":true,
+  "methods":[{"name":"execute","parameterTypes":[] }, {"name":"execute","parameterTypes":["java.lang.String"] }, {"name":"execute","parameterTypes":["java.lang.String","int"] }, {"name":"execute","parameterTypes":["java.lang.String","int[]"] }, {"name":"execute","parameterTypes":["java.lang.String","java.lang.String[]"] }, {"name":"executeQuery","parameterTypes":[] }, {"name":"executeQuery","parameterTypes":["java.lang.String"] }, {"name":"executeUpdate","parameterTypes":[] }, {"name":"executeUpdate","parameterTypes":["java.lang.String"] }, {"name":"executeUpdate","parameterTypes":["java.lang.String","int"] }, {"name":"executeUpdate","parameterTypes":["java.lang.String","int[]"] }, {"name":"executeUpdate","parameterTypes":["java.lang.String","java.lang.String[]"] }, {"name":"getResultSet","parameterTypes":[] }]
+},
+{
+  "name":"oracle.jdbc.internal.OracleStruct",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"oracle.jdbc.internal.OracleTypeMetaData",
+  "queryAllDeclaredMethods":true,
+  "methods":[{"name":"toString","parameterTypes":[] }]
+},
+{
+  "name":"oracle.jdbc.internal.OracleTypeMetaData$Array",
+  "queryAllDeclaredMethods":true,
+  "methods":[{"name":"toString","parameterTypes":[] }]
+},
+{
+  "name":"oracle.jdbc.internal.OracleTypeMetaData$Opaque",
+  "queryAllDeclaredMethods":true,
+  "methods":[{"name":"toString","parameterTypes":[] }]
+},
+{
+  "name":"oracle.jdbc.internal.OracleTypeMetaData$Struct",
+  "queryAllDeclaredMethods":true,
+  "methods":[{"name":"toString","parameterTypes":[] }]
+},
+{
+  "name":"oracle.jdbc.internal.XMLTypeIntf",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"oracle.jdbc.replay.ReplayStatisticsMXBean",
+  "queryAllPublicMethods":true
+},
+{
+  "name":"oracle.jdbc.replay.driver.NonTxnReplayableArray",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"oracle.jdbc.replay.driver.NonTxnReplayableBase",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"oracle.jdbc.replay.driver.NonTxnReplayableBfile",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"oracle.jdbc.replay.driver.NonTxnReplayableBlob",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"oracle.jdbc.replay.driver.NonTxnReplayableClob",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"oracle.jdbc.replay.driver.NonTxnReplayableConnection",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"oracle.jdbc.replay.driver.NonTxnReplayableNClob",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"oracle.jdbc.replay.driver.NonTxnReplayableOpaque",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"oracle.jdbc.replay.driver.NonTxnReplayableOthers",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"oracle.jdbc.replay.driver.NonTxnReplayableRef",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"oracle.jdbc.replay.driver.NonTxnReplayableResultSet",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"oracle.jdbc.replay.driver.NonTxnReplayableStatement",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"oracle.jdbc.replay.driver.NonTxnReplayableStruct",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"oracle.jdbc.replay.driver.ReplayStatisticsMBeanImpl",
+  "queryAllPublicConstructors":true,
+  "methods":[{"name":"cacheMBeanInfo","parameterTypes":["javax.management.MBeanInfo"] }, {"name":"getCachedMBeanInfo","parameterTypes":[] }, {"name":"getMBeanInfo","parameterTypes":[] }]
+},
+{
+  "name":"oracle.jdbc.replay.driver.TxnReplayableArray",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"oracle.jdbc.replay.driver.TxnReplayableBase",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"oracle.jdbc.replay.driver.TxnReplayableBfile",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"oracle.jdbc.replay.driver.TxnReplayableBlob",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"oracle.jdbc.replay.driver.TxnReplayableClob",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"oracle.jdbc.replay.driver.TxnReplayableConnection",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"oracle.jdbc.replay.driver.TxnReplayableNClob",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"oracle.jdbc.replay.driver.TxnReplayableOpaque",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"oracle.jdbc.replay.driver.TxnReplayableOthers",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"oracle.jdbc.replay.driver.TxnReplayableRef",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"oracle.jdbc.replay.driver.TxnReplayableResultSet",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"oracle.jdbc.replay.driver.TxnReplayableSqlxml",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"oracle.jdbc.replay.driver.TxnReplayableStatement",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"oracle.jdbc.replay.driver.TxnReplayableStruct",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"oracle.net.ano.AuthenticationService",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"oracle.net.ano.DataIntegrityService",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"oracle.net.ano.EncryptionService",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"oracle.net.ano.SupervisorService",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"oracle.simplefan.FanManager"
+},
+{
+  "name":"oracle.sql.AnyDataFactory"
+},
+{
+  "name":"oracle.sql.TypeDescriptorFactory"
+},
+{
   "name":"sun.java2d.marlin.DMarlinRenderingEngine",
   "methods":[{"name":"<init>","parameterTypes":[] }]
 },
 {
+  "name":"sun.management.ClassLoadingImpl",
+  "queryAllPublicConstructors":true
+},
+{
+  "name":"sun.management.CompilationImpl",
+  "queryAllPublicConstructors":true
+},
+{
+  "name":"sun.management.ManagementFactoryHelper$1",
+  "queryAllPublicConstructors":true
+},
+{
+  "name":"sun.management.ManagementFactoryHelper$PlatformLoggingImpl",
+  "queryAllPublicConstructors":true
+},
+{
+  "name":"sun.management.MemoryImpl",
+  "queryAllPublicConstructors":true
+},
+{
+  "name":"sun.management.MemoryManagerImpl",
+  "queryAllPublicConstructors":true
+},
+{
+  "name":"sun.management.MemoryPoolImpl",
+  "queryAllPublicConstructors":true
+},
+{
+  "name":"sun.management.RuntimeImpl",
+  "queryAllPublicConstructors":true
+},
+{
   "name":"sun.misc.Unsafe",
-  "fields":[{"name":"theUnsafe"}]
+  "fields":[{"name":"theUnsafe"}],
+  "methods":[{"name":"objectFieldOffset","parameterTypes":["java.lang.reflect.Field"] }, {"name":"putBooleanVolatile","parameterTypes":["java.lang.Object","long","boolean"] }]
+},
+{
+  "name":"sun.security.krb5.internal.APReq"
+},
+{
+  "name":"sun.security.pkcs12.PKCS12KeyStore",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"sun.security.pkcs12.PKCS12KeyStore$DualFormatPKCS12",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"sun.security.provider.DRBG",
+  "methods":[{"name":"<init>","parameterTypes":["java.security.SecureRandomParameters"] }]
+},
+{
+  "name":"sun.security.provider.DSA$SHA224withDSA",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"sun.security.provider.DSA$SHA256withDSA",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
 },
 {
   "name":"sun.security.provider.MD5",
   "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"sun.security.provider.SHA",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"sun.security.provider.SHA2$SHA224",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"sun.security.provider.SHA2$SHA256",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"sun.security.provider.SHA5$SHA384",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"sun.security.provider.SHA5$SHA512",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"sun.security.provider.X509Factory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"sun.security.provider.certpath.PKIXCertPathValidator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"sun.security.rsa.PSSParameters",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"sun.security.rsa.RSAKeyFactory$Legacy",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"sun.security.rsa.RSAPSSSignature",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"sun.security.rsa.RSASignature$SHA224withRSA",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"sun.security.rsa.RSASignature$SHA256withRSA",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"sun.security.ssl.SSLContextImpl$TLSContext",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"sun.security.ssl.TrustManagerFactoryImpl$PKIXFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"sun.security.util.ObjectIdentifier"
+},
+{
+  "name":"sun.security.x509.AuthorityInfoAccessExtension",
+  "methods":[{"name":"<init>","parameterTypes":["java.lang.Boolean","java.lang.Object"] }]
+},
+{
+  "name":"sun.security.x509.AuthorityKeyIdentifierExtension",
+  "methods":[{"name":"<init>","parameterTypes":["java.lang.Boolean","java.lang.Object"] }]
+},
+{
+  "name":"sun.security.x509.BasicConstraintsExtension",
+  "methods":[{"name":"<init>","parameterTypes":["java.lang.Boolean","java.lang.Object"] }]
+},
+{
+  "name":"sun.security.x509.CRLDistributionPointsExtension",
+  "methods":[{"name":"<init>","parameterTypes":["java.lang.Boolean","java.lang.Object"] }]
+},
+{
+  "name":"sun.security.x509.CertificateExtensions"
+},
+{
+  "name":"sun.security.x509.CertificatePoliciesExtension",
+  "methods":[{"name":"<init>","parameterTypes":["java.lang.Boolean","java.lang.Object"] }]
+},
+{
+  "name":"sun.security.x509.ExtendedKeyUsageExtension",
+  "methods":[{"name":"<init>","parameterTypes":["java.lang.Boolean","java.lang.Object"] }]
+},
+{
+  "name":"sun.security.x509.IssuerAlternativeNameExtension",
+  "methods":[{"name":"<init>","parameterTypes":["java.lang.Boolean","java.lang.Object"] }]
+},
+{
+  "name":"sun.security.x509.KeyUsageExtension",
+  "methods":[{"name":"<init>","parameterTypes":["java.lang.Boolean","java.lang.Object"] }]
+},
+{
+  "name":"sun.security.x509.NetscapeCertTypeExtension",
+  "methods":[{"name":"<init>","parameterTypes":["java.lang.Boolean","java.lang.Object"] }]
+},
+{
+  "name":"sun.security.x509.PrivateKeyUsageExtension",
+  "methods":[{"name":"<init>","parameterTypes":["java.lang.Boolean","java.lang.Object"] }]
+},
+{
+  "name":"sun.security.x509.SubjectAlternativeNameExtension",
+  "methods":[{"name":"<init>","parameterTypes":["java.lang.Boolean","java.lang.Object"] }]
+},
+{
+  "name":"sun.security.x509.SubjectKeyIdentifierExtension",
+  "methods":[{"name":"<init>","parameterTypes":["java.lang.Boolean","java.lang.Object"] }]
 }
 ]
